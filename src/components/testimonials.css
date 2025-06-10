@@ -1,0 +1,82 @@
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to left, #000000, #8a0000);
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+/* Container for Testimonial Cards */
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Video Styling */
+.testimonial-card video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#myVideo {
+    width: 100%;
+    height: auto;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.play-btn:hover {
+    opacity: 1;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    padding: 15px;
+}
+
+.testimonial-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.testimonial-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}

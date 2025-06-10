@@ -1,0 +1,27 @@
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-card.highlight {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+.feature-card.highlight p,
+.feature-card.highlight h3 {
+    color: white;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
