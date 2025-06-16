@@ -1,7 +1,7 @@
 /* Global Theme Styling */
 .tcops-container {
   font-family: "Segoe UI", sans-serif;
-  padding: 20px;
+  /* padding: 20px; */
   background: linear-gradient(135deg, #000000 40%, #b71c1c 100%);
   color: #f1f1f1;
   min-height: 100vh;

@@ -1,16 +1,19 @@
 import React from 'react';
-import sImage from "../components/images/s.jpg";
+// import sImage from "../components/images/s.jpg";
 import pro from "../components/images/pro.jpg";
 import Plus from "../components/images/plus.jpg";
 import imac from "../components/images/Imac.jpg";
 import "animate.css";
-
+import sImage from "../components/images/speaker.jpg";
+import sImage1 from "../components/images/speaker1.jpg";
+import sImage2 from "../components/images/speaker2.jpg";
+import sImage3 from "../components/images/speaker3.jpg";
 import Slider from "react-slick";
 import "./Tcops.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const bannerImages = [sImage, sImage, sImage, sImage];
+const bannerImages = [sImage, sImage1, sImage2, sImage3];
 
 const product = [sImage, sImage, sImage, sImage,pro,Plus,imac];
 const Tcops = () => {

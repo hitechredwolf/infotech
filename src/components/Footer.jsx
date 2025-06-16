@@ -1,13 +1,13 @@
 import React from 'react';
 import './Footer.css';
-
+import logo from "./images/redwolflogo.png";
 
 const Footer = () => {
         return (
                 <footer>
                         <div className="content">
                                 <div className="top">
-                                        <img src="assets/redwolflogo.png" alt="Device Secure Logo" className="footer logo" />
+                                        <img src={logo} alt="Device Secure Logo" className="footer logo" />
 
                                         <div className="media-icons">
                                                 <a href="https://www.facebook.com/share/1HBHtkxp9J/?mibextid=wwXIfr"><i className="fab fa-facebook-f"></i></a>
@@ -30,7 +30,7 @@ const Footer = () => {
 
                                         <ul className="box">
                                                 <li className="link_name">Email us</li>
-                                                <li><a href="mailto:info@redwolfhitech.com">info@redwolfhitech.com</a></li>
+                                                <li><a href="mailto:info@redwolfhitech.com">info@redwolfinfotech.com</a></li>
                                         </ul>
 
                                         <ul className="box">
@@ -43,10 +43,10 @@ const Footer = () => {
                                         <ul className="box">
                                                 <li className="link_name">Services</li>
                                                 <li><a href="#">Finance Locker</a></li>
-                                                <li><a href="ev.html">Electric Vehicle</a></li>
-                                                <li><a href="appdev.html">App Development</a></li>
-                                                <li><a href="web.html">Web Development</a></li>
-                                                <li><a href="uiux.html">UI/UX Designing</a></li>
+                                                <li><a href="led.html">LED</a></li>
+                                                <li><a href="appdev.html">Speaker</a></li>
+                                                {/* <li><a href="web.html">Web Development</a></li>
+                                                <li><a href="uiux.html">UI/UX Designing</a></li> */}
                                         </ul>
 
                                         <ul className="box input-box">

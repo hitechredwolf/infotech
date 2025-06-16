@@ -1,40 +1,47 @@
 import React from 'react';
 import FeatureCard from './FeatureCard';
 import './featuresection.css';
+import device from './images/Remote-Device.gif';
+import application from "./images/Application Control.gif";
+import network from "./images/simandnetwork.gif";
+import wirless from "./images/Wireless.gif";
+import location from "./images/Advanced-Location.gif";
+import Maintenance from "./images/Proactive-Maintenance.gif";
+
 const features = [
     {
-        image: 'assets/Remote-Device.gif',
+        image: device,
         title: 'Remote Device Management',
         description:
             'Whether connected online or offline, financial institutions can immediately lock or unlock devices. This ensures that any delay or default in EMI payments can trigger immediate action.',
     },
     {
-        image: 'assets/Application Control.gif',
+        image: application,
         title: 'Selective Application Control',
         description:
             'The ability to lock or unlock specific applications adds an extra layer of security, allowing institutions to prevent unauthorized access to sensitive data.',
     },
     {
-        image: 'assets/simandnetwork.gif',
+        image: network,
         title: 'Dynamic SIM and Network Monitoring',
         description:
             'With real-time SIM tracking, any change in device connectivity is instantly flagged, enhancing fraud prevention efforts.',
         highlight: true,
     },
     {
-        image: 'assets/Wireless.gif',
+        image: wirless,
         title: 'Wireless Connectivity Management',
         description:
             'Features to control Wi-Fi, Bluetooth, and airplane mode enable complete oversight of a device’s connectivity options.',
     },
     {
-        image: 'assets/Advanced-Location.gif',
+        image: location,
         title: 'Advanced Location Services',
         description:
             'The solution supports both real-time and offline location tracking, ensuring that device whereabouts are constantly monitored regardless of network availability.',
     },
     {
-        image: 'assets/Proactive-Maintenance.gif',
+        image: Maintenance,
         title: 'Proactive Device Maintenance',
         description:
             'A remote reboot function ensures that the system can refresh itself to avoid potential vulnerabilities.',

@@ -6,10 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "animate.css";
 
 // Images
-import sImage from "../components/images/speaker1.jpg";
-import sImage1 from "../components/images/speaker1.jpg";
-import sImage2 from "../components/images/speaker2.jpg";
-import sImage3 from "../components/images/speaker3.jpg";
+ import sImage from "../components/images/sp1.jpeg";
+  import sImage1 from "../components/images/sp2.jpeg";
 import m1 from "../components/images/m1.jpeg";
 import m2 from "../components/images/m2.jpeg";
 import m3 from "../components/images/m3.jpeg";
@@ -24,7 +22,7 @@ import m11 from "../components/images/m11.jpeg";
 import m12 from "../components/images/m12.jpeg";
 
 function Speaker() {
-  const sliderImages = [sImage, sImage1, sImage2, sImage3];
+  const sliderImages = [sImage, sImage1, sImage1, sImage];
   const modelNames = [
     "Alpha 100", "Echo 200", "Pulse Mini", "Vibe Max", "Nova Boom",
     "Sonic Edge", "Bass Beast", "Studio Pro", "Thunder 5", "Zen Beat",
@@ -74,23 +72,24 @@ function Speaker() {
       </div>
 
       {/* New: Top Features */}
-      <div className="features-section animate__animated animate__fadeInLeft">
-        <h2>Top Features That Define Us</h2>
-        <div className="features-grid">
-          <div className="feature-card animate__animated animate__zoomIn">
-            <h3>Smart Connectivity</h3>
-            <p>Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.</p>
-          </div>
-          <div className="feature-card animate__animated animate__zoomIn animate__delay-1s">
-            <h3>Studio-Quality Sound</h3>
-            <p>Engineered for precision and clarity with immersive surround effects.</p>
-          </div>
-          <div className="feature-card animate__animated animate__zoomIn animate__delay-2s">
-            <h3>Minimalist Design</h3>
-            <p>Sleek curves, premium finish — sound has never looked so good.</p>
-          </div>
-        </div>
-      </div>
+  <div className="features-section1">
+  <h2 className="features-heading">Top Features That Define Us</h2>
+  <div className="features-grid">
+    <div className="feature-card">
+      <h3>Smart Connectivity</h3>
+      <p>Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Studio-Quality Sound</h3>
+      <p>Engineered for precision and clarity with immersive surround effects.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Minimalist Design</h3>
+      <p>Sleek curves, premium finish — sound has never looked so good.</p>
+    </div>
+  </div>
+</div>
+
 
       {/* Existing: Why Choose Us */}
       <div className="why-choose-section animate__animated animate__fadeIn">

@@ -12,21 +12,20 @@ const Testimonials = () => {
         video3: useRef(null),
     };
 
-    const [playingVideo, setPlayingVideo] = useState(null); // Track which video is playing
+    const [playingVideo, setPlayingVideo] = useState(null);
+    const [hoveredVideo, setHoveredVideo] = useState(null);
 
     const handlePlayPause = (videoId) => {
         const currentVideo = videoRefs[videoId].current;
-
         if (!currentVideo) return;
 
-        // Pause all other videos
+        // Pause other videos
         Object.entries(videoRefs).forEach(([id, ref]) => {
             if (id !== videoId && ref.current) {
                 ref.current.pause();
             }
         });
 
-        // Toggle play/pause for the clicked video
         if (currentVideo.paused) {
             currentVideo.play();
             setPlayingVideo(videoId);
@@ -36,53 +35,41 @@ const Testimonials = () => {
         }
     };
 
+    const handleMouseEnter = (videoId) => setHoveredVideo(videoId);
+    const handleMouseLeave = () => setHoveredVideo(null);
+
     return (
         <section className="testimonials">
             <h2 className="about-us-heading">What Our Clients Say's</h2>
             <div className="testimonials-container">
-
-                {/* Testimonial 1 */}
-                <div className="testimonial-card">
-                    <video ref={videoRefs.video1} id="video1" loop playsInline>
-                        <source src={test1} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <button className="playPauseBtn" onClick={() => handlePlayPause('video1')}>
-                        {playingVideo === 'video1' ? <FaPause /> : <FaPlay />}
-                    </button>
-                    <div className="testimonial-content">
-                        <p>"This service changed my business. The experience was top-notch!"</p>
+                {["video1", "video2", "video3"].map((videoId, index) => (
+                    <div
+                        key={videoId}
+                        className="testimonial-card"
+                        onMouseEnter={() => handleMouseEnter(videoId)}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <video ref={videoRefs[videoId]} id={videoId} loop playsInline>
+                            <source src={[test1, test2, test3][index]} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <button
+                            className={`playPauseBtn ${hoveredVideo === videoId ? 'visible' : ''}`}
+                            onClick={() => handlePlayPause(videoId)}
+                        >
+                            {playingVideo === videoId ? <FaPause /> : <FaPlay />}
+                        </button>
+                        <div className="testimonial-content">
+                            <p>
+                                {[
+                                    '"This service changed my business. The experience was top-notch!"',
+                                    '"A truly professional team. Highly recommend their work!"',
+                                    '"Absolutely incredible results! Exceeded my expectations."'
+                                ][index]}
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                {/* Testimonial 2 */}
-                <div className="testimonial-card">
-                    <video ref={videoRefs.video2} id="video2" loop playsInline>
-                        <source src={test2} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <button className="playPauseBtn" onClick={() => handlePlayPause('video2')}>
-                        {playingVideo === 'video2' ? <FaPause /> : <FaPlay />}
-                    </button>
-                    <div className="testimonial-content">
-                        <p>"A truly professional team. Highly recommend their work!"</p>
-                    </div>
-                </div>
-
-                {/* Testimonial 3 */}
-                <div className="testimonial-card">
-                    <video ref={videoRefs.video3} id="video3" loop playsInline>
-                        <source src={test3} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <button className="playPauseBtn" onClick={() => handlePlayPause('video3')}>
-                        {playingVideo === 'video3' ? <FaPause /> : <FaPlay />}
-                    </button>
-                    <div className="testimonial-content">
-                        <p>"Absolutely incredible results! Exceeded my expectations."</p>
-                    </div>
-                </div>
-
+                ))}
             </div>
         </section>
     );

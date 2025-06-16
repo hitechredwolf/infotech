@@ -12,8 +12,10 @@ import './Home.css';
 import Testimonials from './Testimonials';
 import bannerAi from "./images/bannerAi.png";
 import webbanner from "./images/web banner2.png";
-import banner1 from "./images/banner1.png";
-
+// import banner1 from "./images/banner1.png";
+import Testimonials1 from './Testimonials1';
+import inch from "./images/98inch.jpeg.jpeg"
+import ledad from "./images/led-ad.jpeg.jpeg"
 
 import 'animate.css';
 
@@ -21,12 +23,12 @@ import 'animate.css';
 
 function Home() {
   return (
-   
+
     <div className="App">
-   
+
       <header className="App-header">
-      
-       
+
+
 
         {/* home page code */}
 
@@ -36,10 +38,16 @@ function Home() {
               <img src={bannerAi} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
+              <img src={inch} className="d-block w-100" alt="..." />
+            </div>
+            {/* <div className="carousel-item">
+              <img src={banner1} className="d-block w-100" alt="..." />
+            </div> */}
+            <div className="carousel-item">
               <img src={webbanner} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src={banner1} className="d-block w-100" alt="..." />
+              <img src={ledad} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -76,9 +84,9 @@ function Home() {
 
         {/* counter */}
 
-        <CounterCard/>
-   <FeatureCard/>
+        {/* <CounterCard /> */}
 
+        {/* <FeatureCard/> */}
 
         <FeatureSection />
 
@@ -272,12 +280,12 @@ function Home() {
             </div>
           </div>
         </section>
-          {/* ///////////////////////////////// */}
+        {/* ///////////////////////////////// */}
+        <Testimonials1 />
+        <Testimonials />
 
-          <Testimonials/>
-          
-     
-        
+
+
       </header>
     </div>
   );
