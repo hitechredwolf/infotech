@@ -1,0 +1,173 @@
+/* Base Theme */
+:root {
+  --primary-gradient: linear-gradient(to right, #000000, #8a0000);
+  --text-color: #ffffff;
+  --accent-color: #ff4b2b;
+  --background-light: #1a1a1a;
+}
+
+/* General Wrapper */
+.rw-led-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--primary-gradient);
+  color: var(--text-color);
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Hero Section */
+.rw-led-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.rw-led-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.rw-led-hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.rw-led-features {
+  margin-bottom: 4rem;
+}
+
+.rw-led-features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.rw-led-feature-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.rw-led-feature-card {
+  background: var(--background-light);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.rw-led-feature-card:hover {
+  transform: translateY(-5px);
+  background: #8a0000aa;
+}
+
+/* Products Section */
+.rw-led-products {
+  margin-bottom: 4rem;
+}
+
+.rw-led-products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rw-led-product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.rw-led-product {
+  background: var(--background-light);
+  border-left: 5px solid var(--accent-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.rw-led-product:hover {
+  background-color: #8a0000aa;
+}
+
+/* Testimonials */
+.rw-led-testimonials {
+  margin-bottom: 4rem;
+}
+
+.rw-led-testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rw-led-testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+}
+
+/* Vision */
+.rw-led-vision {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--background-light);
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
+/* Call to Action */
+.rw-led-cta {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #8a0000;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.rw-led-shop-btn {
+  margin-top: 1rem;
+  background: #fff;
+  color: #8a0000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rw-led-shop-btn:hover {
+  background: #ffcccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rw-led-hero h1 {
+    font-size: 2rem;
+  }
+
+  .rw-led-feature-card,
+  .rw-led-product {
+    padding: 1rem;
+  }
+
+  .rw-led-cta h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

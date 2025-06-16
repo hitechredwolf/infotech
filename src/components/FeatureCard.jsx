@@ -1,5 +1,6 @@
 import React from 'react';
 import './featurecrd.css';
+
 const FeatureCard = ({ image, title, description, highlight }) => {
     return (
         <div className={`feature-card ${highlight ? 'highlight' : ''}`}>

@@ -103,10 +103,10 @@ html, body {
   }
   
   .header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px; */
     background: linear-gradient(to right, #000000, #8a0000);
     
   }
@@ -195,20 +195,20 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: #000000;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
     padding: 20px;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000; 
   }
   
   .nav.active ul {
-    flex-direction: column; /* Stack list items vertically */
-    align-items: center; /* Center list items */
+    flex-direction: column; 
+    align-items: center; 
   }
   
   .nav.active ul li {
-    margin: 20px 0; /* Space between vertical items */
+    margin: 20px 0;
   }
   
   .nav.active .download-buttons {
@@ -218,8 +218,8 @@ html, body {
   
   /* Change color when menu is active */
   .nav.active + .menu-button {
-    color: #ffffff; /* Change to white when active */
-    /* z-index: 1100; */
+    color: #ffffff; 
+    
   }
   
   .btn {
@@ -972,7 +972,7 @@ textarea {
     }
   }
   @media (max-width: 768px) {
-    .nav {
+    /* .nav {
       display: none;
       flex-direction: column;
       gap: 0;
@@ -983,7 +983,7 @@ textarea {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       padding: 20px;
       border-radius: 5px;
-    }
+    } */
     
     .logo{
       max-width: 80px;

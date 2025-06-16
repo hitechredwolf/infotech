@@ -1,0 +1,318 @@
+/* Global Theme Styling */
+.tcops-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #000000 40%, #b71c1c 100%);
+  color: #f1f1f1;
+  min-height: 100vh;
+  animation: fadeInPage 1.2s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slider Styling */
+.tcops-slider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Intro Section */
+.tcops-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.tcops-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.tcops-intro .highlight {
+  color: #ff4d4d;
+}
+
+.tcops-intro p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Product Cards Container */
+.tcops-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff4d4d;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #ff4d4d;
+}
+
+.product-card h2 {
+  color: #ff4d4d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #f1f1f1;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tcops-intro h1 {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tcops-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .tcops-intro p {
+    font-size: 0.95rem;
+  }
+
+  .product-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .product-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* 
+========================================== */
+
+
+
+/* Animation library (must be imported already) */
+@import "animate.css";
+
+/* Detailed Cards */
+.tcops-details {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.tcops-detail-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tcops-detail-card:hover {
+  transform: scale(1.01);
+}
+
+.tcops-detail-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.detail-image {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.detail-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.detail-text h2 {
+  color: #ff5722;
+  margin-bottom: 15px;
+}
+
+.detail-text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e7e7e7;
+}
+
+.detail-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-text ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tcops-detail-card,
+  .tcops-detail-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-text {
+    padding: 10px 0;
+  }
+
+  .detail-text ul li {
+    font-size: 0.95rem;
+  }
+}
+.tcops-top-banner {
+  background-color: #f55454;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.tcops-why {
+  background: #b32222;
+ 
+
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, #000000 40%, #b71c1c 100%);
+    color: #f1f1f1;
+   
+    animation: fadeInPage 1.2s ease-in-out;
+
+
+}
+.tcops-why h2 {
+  margin-bottom: 16px;
+  color: #d3c9c9;
+}
+.tcops-why ul {
+  list-style: none;
+  padding: 0;
+}
+.tcops-why li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.tcops-cta {
+  background: linear-gradient(to right, #551d1da4, #d80c0c);
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+.cta-button {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #616569be;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+.tcops-top-banner {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(to right, #501212, #ff6347);
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.tcops-top-banner span {
+  display: inline-block;
+  padding-right: 30%;
+  animation: scrollRight 15s linear infinite;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
