@@ -19,7 +19,7 @@
 
 /* Title and text */
 .contact-title {
-  
+
   text-align: center;
   font-size: 2rem;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@
 }
 
 .contact-subtitle {
-  
+
   text-align: center;
   font-size: 0.95rem;
   color: #ccc;
@@ -36,32 +36,32 @@
 
 /* Form styling */
 .contact-form {
-  
+
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background: rgba(255, 28, 28, 0.05);
-    border-left: 4px solid #ff1c1c;
-    border-radius: 8px;
+
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 28, 28, 0.05);
+  border-left: 4px solid #ff1c1c;
+  border-radius: 8px;
 }
 
 .contact-form input,
 .contact-form textarea {
- 
+
   color: #fff;
   padding: 12px 15px;
 
   border-radius: 8px;
   transition: 0.3s ease;
-      max-width: 800px;
-   
-    background: rgba(255, 28, 28, 0.05);
-    border-left: 4px solid #ff1c1c;
-    border-radius: 8px;
+  max-width: 800px;
+
+  background: rgba(255, 28, 28, 0.05);
+  border-left: 4px solid #ff1c1c;
+  border-radius: 8px;
 }
 
 .contact-form input:focus,
@@ -92,6 +92,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -150,6 +151,7 @@
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
+
 .contact-wrapper {
   background: linear-gradient(to bottom, #000000, #8b0000);
   color: #fff;
@@ -187,7 +189,7 @@
   padding: 12px;
   border: none;
   border-radius: 5px;
- 
+
   color: #fff;
   font-size: 1rem;
 }
@@ -219,3 +221,71 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
+
+
+
+/* //////// */
+
+/* new css for map */
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* or 100vh for full screen */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#map {
+  height: 32rem;
+}
+
+#submit {
+  color: white;
+  background-color: #6366f1;
+  /* indigo-500 */
+  border: none;
+  padding: 0.5rem 1.5rem;
+  /* py-2 px-6 */
+  font-size: 1.125rem;
+  /* text-lg */
+  border-radius: 0.5rem;
+  /* rounded */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #4f46e5;
+  /* indigo-600 */
+}
+
+#submit:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

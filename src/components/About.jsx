@@ -1,14 +1,16 @@
 import React from "react";
 import "./About.css";
 import { FaLock, FaTv, FaVolumeUp } from "react-icons/fa";
+import bannerImage from "./images/About baner.jpg"; // Adjust path based on your structure
 
 const About = () => {
   return (
     <div className="about-container">
-      <div className="banner animate-slide-in">
-        <h1>About Us | Redwolf Info Tech Pvt. Ltd.</h1>
-        <p>Empowering Innovation. Elevating Experience.</p>
-      </div>
+      <div className="banner-image">
+  <img src={bannerImage} alt="About Banner" className="banner-img" />
+  
+</div>
+
 
       <section className="section">
         <h2 className="section-title">Our Journey of Innovation</h2>
@@ -38,7 +40,53 @@ const About = () => {
           </div>
         </div>
       </section>
+      <section className="rw-mission-vision">
+  <div className="rw-split-container">
+    {/* Vision Section */}
+    <div className="rw-box rw-vision">
+      <h2 className="rw-heading">🌟 Vision Statement</h2>
+      <p>
+        To be India’s most trusted innovation-driven brand, delivering smart lifestyle solutions that seamlessly blend
+        technology, sustainability, and everyday convenience.
+      </p>
+      <p>
+        We envision a future where every Indian home and journey is empowered by intelligent Red Wolf products —
+        designed to simplify life, amplify experiences, and shape a smarter tomorrow.
+      </p>
+      <h4 className="rw-subheading">Our Vision Focuses On:</h4>
+      <ul>
+        <li>🚗 Sustainable Mobility through smart, future-ready EVs</li>
+        <li>📺 Connected Living with immersive LED TVs & Speakers</li>
+        <li>📱 Digital Empowerment via powerful finance tools like EMI Locker</li>
+        <li>🏠 Smart Home Expansion with intuitive appliances (coming soon)</li>
+        <li>🇮🇳 Making Innovation Accessible for every Indian household</li>
+      </ul>
+    </div>
 
+    {/* Mission Section */}
+    <div className="rw-box rw-mission">
+      <h2 className="rw-heading">🚀 Mission Statement</h2>
+      <p>
+        At Red Wolf Info Tech, our mission is to reimagine the way India moves, connects, and manages daily life through
+        purposeful innovation.
+      </p>
+      <p>
+        We deliver solutions that blend design, performance, and reliability across mobility, entertainment, and finance
+        — built to serve real needs in real time.
+      </p>
+      <h4 className="rw-subheading">Our Mission Drives Us To:</h4>
+      <ul>
+        <li>⚡ Build eco-friendly electric vehicles for tomorrow’s roads</li>
+        <li>🔊 Deliver high-quality audio-visual products for modern entertainment</li>
+        <li>📊 Create intuitive finance management tools for digital-savvy users</li>
+        <li>🧠 Launch future-ready smart appliances for everyday comfort</li>
+        <li>🛠️ Lead with trust, technology, and customer-first thinking</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{/* 
       <section className="section white-bg">
         <h2 className="section-title">Our Vision</h2>
         <ul className="vision-list">
@@ -46,7 +94,7 @@ const About = () => {
           <li>Driving Continuous Innovation</li>
           <li>Elevating User Experience</li>
         </ul>
-      </section>
+      </section> */}
 
       <section className="section">
         <h2 className="section-title"><FaLock /> TCOPS Finance Locker</h2>

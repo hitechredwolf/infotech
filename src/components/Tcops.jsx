@@ -4,27 +4,27 @@ import pro from "../components/images/pro.jpg";
 import Plus from "../components/images/plus.jpg";
 import imac from "../components/images/Imac.jpg";
 import "animate.css";
-import sImage from "../components/images/speaker.jpg";
+
 import sImage1 from "../components/images/speaker1.jpg";
-import sImage2 from "../components/images/speaker2.jpg";
+import sImage2 from "../components/images/iphone baner.jpeg";
 import sImage3 from "../components/images/speaker3.jpg";
 import Slider from "react-slick";
 import "./Tcops.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const bannerImages = [sImage, sImage1, sImage2, sImage3];
+const bannerImages = [sImage1, sImage2, sImage3];
 
-const product = [sImage, sImage, sImage, sImage,pro,Plus,imac];
+const product = [pro,Plus,imac];
 const Tcops = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
     arrows: false,
     pauseOnHover: false
   };
@@ -61,80 +61,73 @@ const Tcops = () => {
       {/* Product Types */}
       <div className="tcops-products">
         <div className="product-card">
-          <h2>Tcops ZT Pro</h2>
+          <h2>Tcops zt Pro</h2>
           <p>
-            Designed for enterprise-grade environments, ZT Pro offers AI-powered monitoring, real-time alerts, and seamless integration with modern systems.
+            Designed for enterprise-grade environments, ZT Pro offers AI-powered monitoring, real-time alerts, and seamless integration with modern systems.It is use for New Phone .
           </p>
         </div>
         <div className="product-card">
-          <h2>Tcops ZT Plus</h2>
+          <h2>Tcops zt Plus</h2>
           <p>
-            Perfect for mid-sized organizations, ZT Plus balances performance and affordability while maintaining top-tier security capabilities.
+            Perfect for mid-sized organizations, ZT Plus balances performance and affordability while maintaining top-tier security capabilities.It is used for old phone and Already finence .
           </p>
         </div>
         <div className="product-card">
-          <h2>Tcops ZT iMac</h2>
+          <h2>Tcops zt iMac</h2>
           <p>
-            Engineered for creative professionals and Mac environments, ZT iMac combines intuitive design with robust protection tools.
+            Engineered for creative professionals and Mac environments, ZT iMac combines intuitive design with robust protection tools.It is used for iPhone .
           </p>
         </div>
       </div>
+
+ 
+       
+ <section className="v1">
+        <h2 className="h1" style={{color:'black'}}>The TCOPS Finance Locker – Our Flagship Product</h2>
+        <p className="c1">
+          At the core of our success is TCOPS Finance Locker, an advanced mobile
+          security application designed specifically for the telecom industry. Unlike
+          traditional security apps, TCOPS Finance Locker addresses the unique
+          challenges faced by the mobile market when customers delay or default on
+          EMI payments. This solution empowers financial institutions to monitor and
+          control mobile assets with unparalleled precision.
+        </p>
+        <br />
+
+        <section className="card1">
+          <div className="card">
+            <img style={{ width: '50%' }} src="/assets/Cross.png" alt="" />
+            <h5>Cross-Platform Versatility</h5>
+            <p>Available on Android, iOS, and compatible with refurbished devices.</p>
+          </div>
+          <div className="card">
+            <img style={{ width: '50%' }} src="/assets/Comprehensive.png" alt="" />
+            <h5>Comprehensive Control</h5>
+            <p>Enables remote device management, mitigating unauthorized usage and risk.</p>
+          </div>
+          <div className="card">
+            <img style={{ width: '50%' }} src="/assets/Tailored.png" alt="" />
+            <h5>Tailored Security</h5>
+            <p>
+              Designed specifically for financial institutions, telecom sector & handset
+              industry, combining robust technology with user-centric features.
+            </p>
+          </div>
+        </section>
+      </section>
+
 
       {/* Detailed Section for Each Product */}
-      <div className="tcops-details">
 
-        {/* ZT Pro Detail */}
-        <div className="tcops-detail-card animate__animated animate__fadeInLeft">
-          <img src={pro} alt="ZT Pro" className="detail-image" />
-          <div className="detail-text">
-            <h2>Tcops ZT Pro</h2>
-            <p>
-              Built for large enterprises and mission-critical operations. 
-              Featuring cutting-edge AI surveillance, facial recognition, behavioral tracking, and multi-camera integrations.
-            </p>
-            <ul>
-              <li>⚙️ Enterprise-grade AI algorithms</li>
-              <li>📡 Real-time smart alerts & remote access</li>
-              <li>🔐 End-to-end encryption & cloud backup</li>
-            </ul>
-          </div>
-        </div>
 
-        {/* ZT Plus Detail */}
-        <div className="tcops-detail-card reverse animate__animated animate__fadeInRight">
-          <img src={Plus} alt="ZT Plus" className="detail-image" />
-          <div className="detail-text">
-            <h2>Tcops ZT Plus</h2>
-            <p>
-              Ideal for growing businesses. ZT Plus offers customizable workflows and enhanced analytics that scale with your operations.
-            </p>
-            <ul>
-              <li>📊 Smart dashboard for real-time analytics</li>
-              <li>🔧 Easy installation & modular integration</li>
-              <li>📈 Scalable performance at low cost</li>
-            </ul>
-          </div>
-        </div>
+   
 
-        {/* ZT iMac Detail */}
-        <div className="tcops-detail-card animate__animated animate__fadeInUp">
-          <img src={imac} alt="ZT iMac" className="detail-image" />
-          <div className="detail-text">
-            <h2>Tcops ZT iMac</h2>
-            <p>
-              Tailored for Mac users and creative teams, ZT iMac combines sleek design with industry-leading security tools.
-            </p>
-            <ul>
-              <li>🖥️ Mac-optimized interface</li>
-              <li>🎨 Stunning UI/UX for creators</li>
-              <li>☁️ iCloud sync & Time Machine compatibility</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
+
+
+      
       {/* Why Choose Tcops */}
-      <div className="tcops-why animate__animated animate__fadeIn">
+      {/* <div className="tcops-why animate__animated animate__fadeIn">
         <h2>Why Choose Tcops?</h2>
         <p>
           Tcops is more than a product — it's a revolution in digital security. 
@@ -146,8 +139,103 @@ const Tcops = () => {
           <li>🌐 24/7 support & updates</li>
           <li>📱 Compatible with Android, iOS, Windows & Mac</li>
         </ul>
-      </div>
+      </div> */}
 
+
+
+
+
+
+
+ <div>
+
+
+      
+      <section className="expansion-container">
+        <h2 className="about-us-headinga" style={{color:'white'}}>Distinctive Features Without Repetition</h2>
+        <p className="about-us-container">
+          TCOPS Finance Locker incorporates a suite of features designed to maximize
+          security and streamline asset management. Each feature is purpose-built to
+          ensure that every facet of mobile security is addressed
+        </p>
+
+        <div className="card-grid">
+          <div className="expansion-card">
+            <img style={{ width: '50%' }} src="/assets/DeviceManagement.svg" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Remote Device Management</h5>
+            <p>
+              Retailers/shop-keepers can lock/unlock devices instantly, ensuring immediate
+              action on EMI delays or defaults.
+            </p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '33%' }} src="/assets/Application Control.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Selective Application Control</h5>
+            <p>Restricts access to sensitive applications, preventing unauthorized usage.</p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '50%' }} src="/assets/camera.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Integrated Camera Control</h5>
+            <p>Disables the camera to enhance privacy and prevent unauthorized image capture.</p>
+          </div>
+        </div>
+
+        <div className="card-grid">
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/networking.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Dynamic SIM and Network Monitoring</h5>
+            <p>Tracks real-time SIM changes to reinforce fraud prevention.</p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/location1.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Advanced Location Services</h5>
+            <p>Supports both real-time and offline location tracking to monitor device whereabouts.</p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/Proactive Device.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Proactive Device Maintenance</h5>
+            <p>
+              Controls Wi-Fi, Bluetooth, and airplane mode for complete security oversight.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="expansion-container">
+        <h2 className="about-us-headinga" style={{color:'white'}}>Market Impact and Customer Success</h2>
+        <p className="about-us-container">
+          Redwolf Hi-Tech’s innovations have significantly impacted market, delivering measurable benefits:
+        </p>
+
+        <div className="card-grid">
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/Asset-Recovery.webp" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Enhanced Payment Recovery</h5>
+            <p>Faster, more efficient device retrieval reduces losses from EMI defaults.</p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/Improved Compliance.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Improved Compliance</h5>
+            <p>
+              Advanced monitoring ensures institutions adhere to regulatory standards.
+            </p>
+          </div>
+
+          <div className="expansion-card">
+            <img style={{ width: '35%' }} src="/assets/Increased Efficiency.png" alt="" />
+            <h5 style={{ fontSize: 'x-large' }}>Operational Efficiency</h5>
+            <p>Automated security protocols minimize manual intervention, saving time and resources.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
       {/* Call to Action */}
       <div className="tcops-cta animate__animated animate__bounceIn">
         <h2>Ready to experience India’s No.1 Finance Locker?</h2>

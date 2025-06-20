@@ -11,40 +11,40 @@ import Maintenance from "./images/Proactive-Maintenance.gif";
 const features = [
     {
         image: device,
-        title: 'Remote Device Management',
+        title: 'Android Finance Locker',
         description:
-            'Whether connected online or offline, financial institutions can immediately lock or unlock devices. This ensures that any delay or default in EMI payments can trigger immediate action.',
+            'Your money. Your control. Track EMIs, bills & dues — all in one powerful Android app. Built for speed, security, and simplicity.',
     },
     {
         image: application,
-        title: 'Selective Application Control',
+        title: 'iMac Finance Locker',
         description:
-            'The ability to lock or unlock specific applications adds an extra layer of security, allowing institutions to prevent unauthorized access to sensitive data.',
+            'Smart finance, the Apple way. Seamlessly manage your EMIs and expenses on macOS — smooth, intuitive, and built for productivity.',
     },
     {
         image: network,
-        title: 'Dynamic SIM and Network Monitoring',
+        title: 'LED TV',
         description:
-            'With real-time SIM tracking, any change in device connectivity is instantly flagged, enhancing fraud prevention efforts.',
+            'Visuals that speak louder. Ultra HD clarity, Dolby sound, and smart connectivity — Red Wolf TVs redefine what a screen can do.',
         highlight: true,
     },
     {
         image: wirless,
-        title: 'Wireless Connectivity Management',
+        title: 'Speaker',
         description:
-            'Features to control Wi-Fi, Bluetooth, and airplane mode enable complete oversight of a device’s connectivity options.',
+            'Sound that hits different. Deep bass. RGB vibes. Built-in power. Red Wolf speakers turn every room into a concert.',
     },
     {
         image: location,
-        title: 'Advanced Location Services',
+        title: 'EV',
         description:
-            'The solution supports both real-time and offline location tracking, ensuring that device whereabouts are constantly monitored regardless of network availability.',
+            'Electric. Efficient. Exceptional. Red Wolf EVs deliver future-ready mobility — eco-smart rides crafted for Indian roads',
     },
     {
         image: Maintenance,
-        title: 'Proactive Device Maintenance',
+        title: 'Other Red Wolf Products (Coming Soon)',
         description:
-            'A remote reboot function ensures that the system can refresh itself to avoid potential vulnerabilities.',
+            'We’re powering your entire home. Washing machines, geysers & more — Red Wolf HomeTech is coming. Stay tuned for smart living.',
     },
 ];
 
@@ -54,7 +54,7 @@ const FeatureSection = () => {
             <div className="container">
                 <div className="section-heading">
                     <h2>
-                        <span className="red">T-COPS</span> <span className="ev">Features</span>
+                        <span className="red">Red Wolf</span> <span className="ev">Products</span>
                     </h2>
                 </div>
 

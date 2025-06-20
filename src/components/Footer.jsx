@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+// import PrivacyPolicy from './PrivacyPolicy';
+import { Link} from "react-router-dom";
 import logo from "./images/redwolflogo.png";
 
 const Footer = () => {
@@ -21,7 +23,7 @@ const Footer = () => {
                                         <ul className="box">
                                                 <li className="link_name">Address</li>
                                                 <li className="address">
-                                                        Red Wolf Hi-tech Pvt.Ltd. <br />
+                                                        Red Wolf info-tech Pvt.Ltd. <br />
                                                         Assotech Business Cresterra, <br />
                                                         Unit-214, Tower-4 <br />
                                                         Sector 135, Noida-201305.
@@ -41,13 +43,21 @@ const Footer = () => {
                                         </ul>
 
                                         <ul className="box">
-                                                <li className="link_name">Services</li>
-                                                <li><a href="#">Finance Locker</a></li>
-                                                <li><a href="led.html">LED</a></li>
-                                                <li><a href="appdev.html">Speaker</a></li>
-                                                {/* <li><a href="web.html">Web Development</a></li>
-                                                <li><a href="uiux.html">UI/UX Designing</a></li> */}
+                                                {/* <li><Link to="/Pp">Privacy policy</Link></li>
+                                                <li><Link to="/t&c">Term & Condition</Link></li> */}
+
+                                                {/* <Router>
+                                                        <Routes> */}
+                                                <li><Link to="/Terms">Term & Condition</Link></li>
+                                                <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
+                                                
+                                                {/* add other routes */}
+                                                {/* </Routes>
+                                                </Router> */}
+
                                         </ul>
+
+
 
                                         <ul className="box input-box">
                                                 <li className="link_name">Subscribe</li>
@@ -60,12 +70,12 @@ const Footer = () => {
                         <div className="bottom-details">
                                 <div className="bottom_text">
                                         <span className="copyright_text">
-                                                Copyright © 2025 <a href="#">Red Wolf Hi-tech Pvt.Ltd.</a> All rights reserved
+                                                Copyright © 2025 <a href="#">Red Wolf info-tech Pvt.Ltd.</a> All rights reserved
                                         </span>
-                                        <span className="policy_terms">
+                                        {/* <span className="policy_terms">
                                                 <a href="pp.html">Privacy policy</a>
                                                 <a href="tc.html">Terms & condition</a>
-                                        </span>
+                                        </span> */}
                                 </div>
                         </div>
                 </footer>

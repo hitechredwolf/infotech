@@ -8,6 +8,8 @@ import Speaker from "./components/Speaker";
 import Led from "./components/Led";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Terms from "./components/Terms";
 
 function App() {
   return (
@@ -16,14 +18,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Tcops" element={<Tcops/>} />
+        <Route path="/Tcops" element={<Tcops />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/speaker" element={<Speaker />} />
-      <Route path="/Led" element={<Led />} />
+        <Route path="/Led" element={<Led />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Terms" element={<Terms />} />
       </Routes>
-        <Footer />
+      <Footer />
     </>
-  
+
   );
 }
 

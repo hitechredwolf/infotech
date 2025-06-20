@@ -4,7 +4,7 @@ import CounterCard from './CounterCard';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import FeatureCard from './FeatureCard';
+// import FeatureCard from './FeatureCard';
 import FeatureSection from './FeatureSection';
 import 'animate.css';
 import './Home.css';
@@ -14,8 +14,10 @@ import bannerAi from "./images/bannerAi.png";
 import webbanner from "./images/web banner2.png";
 // import banner1 from "./images/banner1.png";
 import Testimonials1 from './Testimonials1';
-import inch from "./images/98inch.jpeg.jpeg"
-import ledad from "./images/led-ad.jpeg.jpeg"
+import inch from "./images/98inch.jpeg"
+import ledad from "./images/led-ad.jpeg"
+// import panindia from "./images/com-mappvideo.mp4"
+
 
 import 'animate.css';
 
@@ -193,7 +195,7 @@ function Home() {
                   Stage 5
                 </div>
                 <div class="timeline__event__description">
-                  <p> We are now recognized as RedWolf Hi-Tech Pvt Ltd.</p>
+                  <p> We are now recognized as RedWolf info-Tech Pvt Ltd.</p>
                 </div>
               </div>
             </div>
@@ -278,13 +280,35 @@ function Home() {
                 </div>
               </div>
             </div>
+
+            {/* add 10th point */}
+
+            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+              <div class="timeline__event__icon">
+                {/* <!-- <i class="lni-sport"></i>--> */}
+
+              </div>
+              <div class="timeline__event__date">
+                March 2025
+              </div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                  Stage 10
+                </div>
+                <div class="timeline__event__description">
+                  <p>In March, Redwolf stepped into the home appliances segment, including Smart TVs and Bluetooth speakers.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
         </section>
         {/* ///////////////////////////////// */}
         <Testimonials1 />
         <Testimonials />
-
-
 
       </header>
     </div>

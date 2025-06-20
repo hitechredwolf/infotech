@@ -7,7 +7,7 @@ const CounterCard = ({ target, label }) => {
 
     useEffect(() => {
         let count = 0;
-        const increment = target / 100;
+        const increment = target / 300;
 
         const updateCount = () => {
             if (count < target) {
