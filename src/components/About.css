@@ -110,8 +110,10 @@
 .card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: radial-gradient(circle, rgba(255, 0, 0, 0.05), transparent);
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -177,6 +179,7 @@
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -188,6 +191,7 @@
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -198,6 +202,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 60px;
   }
@@ -207,17 +212,24 @@
   0% {
     text-shadow: 0 0 5px #fff, 0 0 10px #ff1a1a;
   }
+
   50% {
     text-shadow: 0 0 15px #fff, 0 0 25px #ff4d4d;
   }
+
   100% {
     text-shadow: 0 0 5px #fff, 0 0 10px #ff1a1a;
   }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Responsive Design */
@@ -257,20 +269,25 @@
     opacity: 0;
     transform: scale(0.3);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.05);
   }
+
   70% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 .bounce-in {
   animation: bounceIn 1s ease;
 }
+
 .banner-image {
   position: relative;
   width: 100%;
@@ -295,6 +312,7 @@
   border-radius: 10px;
   text-align: center;
 }
+
 .rw-mission-vision {
   background-color: #feeeee;
   color: #030303;
@@ -382,5 +400,228 @@
 
   .rw-heading {
     font-size: 1.5rem;
+  }
+}
+
+
+/* FOURTH  */
+
+.brand-attributes-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.brand-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.brand-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-card {
+  width: 250px;
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.brand-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brand-card p {
+  font-size: 15px;
+  color: #555;
+  margin-top: 6px;
+}
+
+
+
+/* events  */
+
+
+/* === Event Section === */
+
+.event-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.event-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  padding: 15px 10px;
+  color: #444;
+}
+
+/* === Modal Styles === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #cc0000;
+}
+
+.modal-content h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* === Image Grid in Modal === */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  height: 120px;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+  }
+
+  .event-section .section-title {
+    font-size: 1.5rem;
+  }
+
+  .image-grid img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card h3 {
+    font-size: 1rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.2rem;
   }
 }

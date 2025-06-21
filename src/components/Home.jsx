@@ -17,6 +17,7 @@ import Testimonials1 from './Testimonials1';
 import inch from "./images/98inch.jpeg"
 import ledad from "./images/led-ad.jpeg"
 // import panindia from "./images/com-mappvideo.mp4"
+import front from "./images/frontspeaker.jpeg"
 
 
 import 'animate.css';
@@ -49,7 +50,7 @@ function Home() {
               <img src={webbanner} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src={ledad} className="d-block w-100" alt="..." />
+              <img src={front} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -195,7 +196,7 @@ function Home() {
                   Stage 5
                 </div>
                 <div class="timeline__event__description">
-                  <p> We are now recognized as RedWolf info-Tech Pvt Ltd.</p>
+                  <p> We are now recognized as Red Wolf Info Tech Pvt Ltd.</p>
                 </div>
               </div>
             </div>
@@ -276,7 +277,7 @@ function Home() {
                   Stage 9
                 </div>
                 <div class="timeline__event__description">
-                  <p>We successfully launched RedWolf EV, revolutionizing the future of electric mobility and AI.</p>
+                  <p>We successfully launched Red Wolf EV, revolutionizing the future of electric mobility and AI.</p>
                 </div>
               </div>
             </div>
@@ -296,7 +297,7 @@ function Home() {
                   Stage 10
                 </div>
                 <div class="timeline__event__description">
-                  <p>In March, Redwolf stepped into the home appliances segment, including Smart TVs and Bluetooth speakers.</p>
+                  <p>In March, Red Wolf stepped into the home appliances segment, including Smart TVs and Bluetooth speakers.</p>
                 </div>
               </div>
             </div>

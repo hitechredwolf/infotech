@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Terms from "./components/Terms";
+import More from "./components/More";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Led" element={<Led />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Terms" element={<Terms />} />
+         <Route path="/More" element={<More />} />
       </Routes>
       <Footer />
     </>

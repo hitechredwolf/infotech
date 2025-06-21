@@ -294,36 +294,59 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import "./Led.css"
-import led from "./images/led1.jpeg"
-import led2 from "./images/led2.jpeg"
+// import led from "./images/led1.jpeg"
+// import led2 from "./images/led2.jpeg"
 import led3 from "./images/led3.jpeg"
 import LED1 from "./images/32inch.jpg"
 import LED2 from "./images/42inch.jpg"
 import LED3 from "./images/52inch.jpg"
 import LED4 from "./images/68inch.jpg"
+import inchled from "./images/Led 98.jpg"
+import TV from "./images/tv 2.jpeg"
+import Advertise from "./images/ADVERTISE.jpeg"
+import Last from "./images/ADVERTISELAST.jpeg"
+import television from "./images/98inch.jpg"
+
+
+// ott
+
+import netflix from './images/netflix.jpg';
+import disney from './images/disneylogo.webp';
+import prime from './images/PrimeVideo.png';
+import hulu from './images/HuluLogopng.png';
+import spotify from './images/Spotify.png';
+import apple from './images/appleitunes.png';
+// import google from './images/g';
+import sony from './images/Sony-Liv.jpeg';
+
+
+// import vibrantImg from './images/102inch.jpg';
+// import innovativeImg from './images/68inch.jpg';
+// import fashionableImg from './images/78inch.jpg';
+// import premiumImg from './images/42inch.jpg';
 export default function Led() {
 
 
   const products = [
     {
       img: LED1,
-      name: "P755 PRO",
-      subtitle: "Powerful mini. Sleek uni-body",
+      name: "43 Smart LED TV",
+      subtitle: "A sleek, frameless Full HD TV with Dolby Audio, ideal for immersive entertainment. Built-in Play Store and voice remote support",
     },
     {
       img: LED2,
-      name: "P655",
-      subtitle: "TCL 4K UHD TV",
+      name: "55 WebOS LED TV",
+      subtitle: "WebOS interface with smart 4K clarity and Dolby audio. Built for users who want convenience with elegance.",
     },
     {
       img: LED3,
-      name: "C755",
-      subtitle: "TCL QD-Mini LED 4K TV",
+      name: "85 WebOS LED TV",
+      subtitle: "Ideal for large home setups, delivering seamless 4K quality and premium sound. Built to impress",
     },
     {
       img: LED4,
-      name: "98P745",
-      subtitle: "TCL 4K UHD TV",
+      name: "98 WebOS LED TV",
+      subtitle: "The grandest display in the range — a true home-theatre experience. Powerful visuals and immersive Dolby audio.",
     },
   ];
 
@@ -331,34 +354,44 @@ export default function Led() {
   const cards = [
     {
       image: LED1,
-      title: 'What is a Good Decibel Level for an Air Conditioner?',
-      date: '2025-04-30',
-      tag: '# Air Conditioner Buying Guides',
+      title: '32" Smart LED TV',
+      tag: 'Frameless and feature-rich, this Smart 32" TV supports Chromecast, Google Assistant, and a smooth viewing experience.',
+      perageaph: 'RAM: 1GB | ROM: 8GB',
+      perageaph: 'Chromecast, Google Assistant, Voice Remote',
+      perageaph: 'Dual USB, Dual HDMI',
+      perageaph: 'Frameless HD Display | Free Wall Mount',
+
     },
     {
       image: LED2,
-      title: 'How Loud Are Portable Air Conditioners? Noise Levels Explained',
-      date: '2025-04-28',
-      tag: '# Air Conditioner Buying Guides',
+      title: ' 24" Smart LED TV',
+      // date: '2025-04-28',
+      tag: 'The same sleek design with the added benefit of Smart features — perfect for streaming, casual viewing, and compact setups.',
     },
     {
       image: LED3,
-      title: 'What Size of Mini Split Do I Need? Your Guide to Proper Sizing',
-      date: '2025-04-25',
-      tag: '# Air Conditioner Buying Guides',
+      title: '98" WebOS LED TV',
+      // date: '2025-04-25',
+      tag: 'The grandest display in the range — a true home-theatre experience. Powerful visuals and immersive Dolby audio.',
     },
     {
       image: LED4,
-      title: 'What Size of Mini Split Do I Need? Your Guide to Proper Sizing',
-      date: '2025-04-25',
-      tag: '# Air Conditioner Buying Guides',
+      title: ' 65" WebOS LED TV',
+      // date: '2025-04-25',
+      tag: 'Step into a cinematic experience with this large-screen 4K Ultra HD Smart TV. Voice command and powerful audio included.',
     },
     {
-      image: led2,
-      title: 'What Size of Mini Split Do I Need? Your Guide to Proper Sizing',
-      date: '2025-04-25',
-      tag: '# Air Conditioner Buying Guides',
+      image: television,
+      title: '55" Android LED TV',
+      // date: '2025-04-25',
+      tag: 'Ultra HD display with Android 6.0 and a 4-core processor. Packed with performance for OTT streaming and gaming.',
     },
+  ];
+
+  const logos = [
+    netflix, disney, prime, hulu, spotify, apple, sony,
+    // Repeat again for smooth infinite effect
+    netflix, disney, prime, hulu, spotify, apple, sony,
   ];
   const trackRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
@@ -393,15 +426,17 @@ export default function Led() {
       trackRef.current.style.transform = `translateX(-${index * cardWidth}px)`;
     }
   }, [index, cardWidth]);
+
+
   return (
     <>
       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={led} className="d-block w-100" alt="..." />
+            <img src={inchled} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={led2} className="d-block w-100" alt="..." />
+            <img src={TV} className="d-block w-100" alt="..." />
           </div>
           {/* <div className="carousel-item">
               <img src={banner1} className="d-block w-100" alt="..." />
@@ -437,12 +472,22 @@ export default function Led() {
           <div className="featured-img-box">
             <img src={LED1} alt="LED1" />
             <div className="overlay">
-              <h3>C655</h3>
-              <p>TCL QLED TV</p>
-              <button>Learn More</button>
+              <h3>32" Smart LED TV</h3>
+              <p>Frameless and feature-rich, this Smart 32" TV supports Chromecast, Google Assistant, and a
+                smooth viewing experience.</p>
+              {/* <button>Learn More</button> */}
             </div>
           </div>
-          <p className="caption">C655<br />Restore true colors, see the world unfilters</p>
+          <p className="caption" style={{
+            fontWeight: '600',
+            fontSize: '2rem',
+            textAlign: 'center',
+            marginBottom: '20px',
+            margin: '30px',
+            fontFamily: 'sans-serif',
+            zIndex: 2,
+            color: '#cc111a'
+          }}><br />Our Top Notch Product's</p>
         </div>
 
         <div className="product-grid">
@@ -464,25 +509,47 @@ export default function Led() {
 
 
 
-      <section className="slider-section">
-        <h2>Discover More with TCL</h2>
-        <div className="slider-container">
-          <button className="slider-btn prev" onClick={handlePrev}>&#8249;</button>
+      <section className="rw-slider-section">
+        <h2>Discover More with Red Wolf</h2>
+        <div className="rw-slider-container">
+          <button className="rw-slider-btn prev" onClick={handlePrev}>&#8249;</button>
 
-          <div className="slider-track" ref={trackRef}>
+          <div className="rw-slider-track" ref={trackRef}>
             {cards.map((card, i) => (
-              <div className="slider-card" key={i}>
+              <div className="rw-slider-card" key={i}>
                 <img src={card.image} alt={`Slide ${i}`} />
                 <h4>{card.title}</h4>
-                <p>{card.date}</p>
                 <span>{card.tag}</span>
+                <br />
+                <p>{card.perageaph}</p>
               </div>
             ))}
           </div>
 
-          <button className="slider-btn next" onClick={handleNext}>&#8250;</button>
+          <button className="rw-slider-btn next" onClick={handleNext}>&#8250;</button>
         </div>
       </section>
+
+
+      {/* FOURTH SECTION */}
+
+      <section>
+        <img src={Advertise} alt="advertise" style={{ width: '100%' }} />
+        <br />
+        <div className="ott-slider">
+          <div className="slider-track">
+            {logos.map((logo, index) => (
+              <div className="ott-slide" key={index}>
+                <img src={logo} alt={`logo-${index}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <img src={Last} alt="advertiselast" style={{ width: '100%' }} />
+
+      </section>
+
     </>
   )
 }

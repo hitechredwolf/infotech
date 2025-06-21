@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "animate.css";
 
 // Images
- import sImage from "../components/images/sp1.jpeg";
+ import sImage2 from "../components/images/sp1.jpeg";
   import sImage1 from "../components/images/sp2.jpeg";
-   import sImage2 from "../components/images/speaker baner.jpeg";
+   import sImage from "../components/images/speaker latest.jpeg";
 import m1 from "../components/images/m1.jpeg";
 import m2 from "../components/images/m2.jpeg";
 import m3 from "../components/images/m3.jpeg";
@@ -18,19 +18,19 @@ import m6 from "../components/images/m6.jpeg";
 import m7 from "../components/images/m13.jpeg";
 import m8 from "../components/images/m8.jpeg";
 import m9 from "../components/images/m9.jpeg";
-import m10 from "../components/images/m10.jpeg";
+// import m10 from "../components/images/m10.jpeg";
 import m11 from "../components/images/m11.jpeg";
 import m12 from "../components/images/m14.jpeg";
 import m13 from "../components/images/m16.jpeg";
-import m14 from "../components/images/m12.jpeg";
+import m14 from "../components/images/M20.jpeg";
 function Speaker() {
-  const sliderImages = [sImage, sImage1, sImage2, sImage];
+  const sliderImages = [sImage, sImage1, sImage2];
   const modelNames = [
     "CLASSIC", "TRANCE Jr.", "TRANCE", "SONIC 200", "PULSE BOX",
-    "NEW WAVE 100", "FUNK", "K-POP", "BRASS", "ROCK $ ROLL",
+    "NEW WAVE 100", "FUNK", "K-POP", "BRASS",
     "HARMONY X", "NEW WAVE 200","SONIC 80","ROCK $ ROLL"
   ];
-  const productImages = [m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12,m13,m14];
+  const productImages = [m1, m2, m3, m4, m5, m6, m7, m8, m9, m11, m12,m13,m14];
 
   const products = modelNames.map((model, index) => ({
     id: index + 1,
@@ -66,9 +66,9 @@ function Speaker() {
 
       {/* Welcome Section */}
       <div className="intro-section animate__animated animate__fadeInUp">
-        <h1 className="main-heading">Redwolf Infotech Speakers</h1>
+        <h1 className="main-heading">Speakers</h1>
         <p className="intro-text">
-          Welcome to Redwolf Infotech — your destination for premium audio experiences. 
+          Welcome to Red Wolf Info Tech — your destination for premium audio experiences. 
           Our speakers fill your space with rich, powerful sound and modern elegance.
         </p>
       </div>
@@ -78,16 +78,16 @@ function Speaker() {
   <h2 className="features-heading">Top Features That Define Us</h2>
   <div className="features-grid">
     <div className="feature-card">
-      <h3>Smart Connectivity</h3>
-      <p>Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.</p>
+      <h3 style={{ fontWeight:'700' }}>Smart Connectivity</h3>
+      <p style={{ fontWeight:'400',color:"black"}}>Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.</p>
     </div>
     <div className="feature-card">
-      <h3>Studio-Quality Sound</h3>
-      <p>Engineered for precision and clarity with immersive surround effects.</p>
+      <h3  style={{ fontWeight:'700' }}>Studio-Quality Sound</h3>
+      <p style={{ fontWeight:'400',color:"black"}}>Engineered for precision and clarity with immersive surround effects.</p>
     </div>
     <div className="feature-card">
-      <h3>Minimalist Design</h3>
-      <p>Sleek curves, premium finish — sound has never looked so good.</p>
+      <h3  style={{ fontWeight:'700' }}>Minimalist Design</h3>
+      <p style={{ fontWeight:'400' ,color:"black"}}>Sleek curves, premium finish — sound has never looked so good.</p>
     </div>
   </div>
 </div>
@@ -95,7 +95,7 @@ function Speaker() {
 
       {/* Existing: Why Choose Us */}
       <div className="why-choose-section animate__animated animate__fadeIn">
-        <h2>Why Choose Redwolf Speakers?</h2>
+        <h2>Why Choose Red Wolf Speakers?</h2>
         <ul>
           <li>🎵 High-fidelity sound with deep bass and crystal-clear highs</li>
           <li>🛠️ Durable design built with premium-grade materials</li>
@@ -110,7 +110,7 @@ function Speaker() {
 {/* New: Speaker Personality Selector */}
 <section className="speaker-match-carousel">
   <h2 className="match-title">🎧 Find Your Speaker Match</h2>
-  <p className="match-tagline">Slide through to discover the Redwolf that fits your vibe!</p>
+  <p className="match-tagline">Slide through to discover the Red Wolf that fits your vibe!</p>
 
   <div className="match-scroll-container">
     {[
@@ -136,7 +136,7 @@ function Speaker() {
       <p className="product-description">Explore our range — from personal companions to party beasts.</p>
 
       <div className="product-section animate__animated animate__fadeInUpBig">
-        {products.slice(0, showAll ? products.length : 7).map((product) => (
+        {products.slice(0, showAll ? products.length : 6).map((product) => (
           <div key={product.id} className="product-card hover-zoom">
             <img src={product.image} alt={product.model} />
             <h3>{product.model}</h3>
@@ -236,7 +236,7 @@ function Speaker() {
   <div className="mission-wrapper">
     <h2 className="mission-title">🚀 Our Mission</h2>
     <p className="mission-description">
-      At <span className="highlight">Redwolf Infotech</span>, we’re reshaping sound by 
+      At <span className="highlight">Red Wolf Info Tech</span>, we’re reshaping sound by 
       fusing <em>cutting-edge technology</em> with <em>emotive design</em>. Our goal is 
       simple: to make your world sound richer, deeper, and more alive.
     </p>
@@ -245,13 +245,15 @@ function Speaker() {
 
 
       {/* Footer Note */}
-      <div className="footer-note animate__animated animate__fadeInUp">
+
+      
+      {/* <div className="footer-note animate__animated animate__fadeInUp">
         <h3>Ready to Amplify Your World?</h3>
         <p>
           Join thousands of satisfied users who’ve upgraded their audio game with Redwolf Infotech.
           Experience sound the way it’s meant to be heard — bold, clear, and immersive.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

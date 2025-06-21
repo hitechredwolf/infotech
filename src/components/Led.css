@@ -104,10 +104,13 @@
 .product-card h4 {
   margin: 5px 0;
   font-size: 1rem;
+  color: red;
+  font-weight: 900;
+
 }
 
 .product-card p {
-  color: #666;
+  color: #ffff;
   font-size: 0.9rem;
 }
 
@@ -201,5 +204,112 @@
 @media (max-width: 600px) {
   .slider-card {
     min-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* third */
+
+.rw-slider-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.rw-slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.rw-slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.rw-slider-card {
+  flex: 0 0 300px;
+  margin: 0 15px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rw-slider-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.rw-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.rw-slider-btn.prev {
+  left: 10px;
+}
+
+.rw-slider-btn.next {
+  right: 10px;
+}
+
+
+
+
+/* OTT Slider */
+
+.ott-slider {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 30px 0;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(300px * 24);
+  /* Adjust based on item count */
+  animation: scroll 40s linear infinite;
+}
+
+.ott-slide {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ott-slide img {
+  max-height: 75px;
+  object-fit: contain;
+  width: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

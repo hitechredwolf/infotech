@@ -6,7 +6,7 @@ import imac from "../components/images/Imac.jpg";
 import "animate.css";
 
 import sImage1 from "../components/images/speaker1.jpg";
-import sImage2 from "../components/images/iphone baner.jpeg";
+import sImage2 from "../components/images/TCOPS IMAC.jpeg";
 import sImage3 from "../components/images/speaker3.jpg";
 import Slider from "react-slick";
 import "./Tcops.css";
@@ -45,7 +45,7 @@ const Tcops = () => {
 
       {/* India No.1 Banner */}
       <div className="tcops-top-banner">
-  <span>🇮🇳 Proudly India's No.1 Finance Locker — Trusted by Millions Across the Nation!</span>
+  <span>IN Proudly India's No.1 Finance Locker — Trusted By Millions Across The Nation!</span>
 </div>
 
 
@@ -62,29 +62,29 @@ const Tcops = () => {
       <div className="tcops-products">
         <div className="product-card">
           <h2>Tcops zt Pro</h2>
-          <p>
+          <p  style={{ color: "white",fontWeight: "bold" }}>
             Designed for enterprise-grade environments, ZT Pro offers AI-powered monitoring, real-time alerts, and seamless integration with modern systems.It is use for New Phone .
           </p>
         </div>
         <div className="product-card">
           <h2>Tcops zt Plus</h2>
-          <p>
+          <p style={{ color: "white",fontWeight: "bold" }}>
             Perfect for mid-sized organizations, ZT Plus balances performance and affordability while maintaining top-tier security capabilities.It is used for old phone and Already finence .
           </p>
         </div>
         <div className="product-card">
           <h2>Tcops zt iMac</h2>
-          <p>
+          <p style={{ color: "white",fontWeight: "bold" }}>
             Engineered for creative professionals and Mac environments, ZT iMac combines intuitive design with robust protection tools.It is used for iPhone .
           </p>
-        </div>
+        </div> 
       </div>
 
  
        
- <section className="v1">
-        <h2 className="h1" style={{color:'black'}}>The TCOPS Finance Locker – Our Flagship Product</h2>
-        <p className="c1">
+ <section className="v1"style={{ background : "white" }}>
+        <h2 className="h1" style={{color:'black'}}><span className="highlight">The TCOPS Finance Locker</span> – Our Flagship Product</h2>
+        <p className="about-us-container">
           At the core of our success is TCOPS Finance Locker, an advanced mobile
           security application designed specifically for the telecom industry. Unlike
           traditional security apps, TCOPS Finance Locker addresses the unique
@@ -97,17 +97,17 @@ const Tcops = () => {
         <section className="card1">
           <div className="card">
             <img style={{ width: '50%' }} src="/assets/Cross.png" alt="" />
-            <h5>Cross-Platform Versatility</h5>
+            <h5 style={{ fontSize: 'x-large' }}>Cross-Platform Versatility</h5>
             <p>Available on Android, iOS, and compatible with refurbished devices.</p>
           </div>
           <div className="card">
             <img style={{ width: '50%' }} src="/assets/Comprehensive.png" alt="" />
-            <h5>Comprehensive Control</h5>
+            <h5 style={{ fontSize: 'x-large' }}>Comprehensive Control</h5>
             <p>Enables remote device management, mitigating unauthorized usage and risk.</p>
           </div>
           <div className="card">
             <img style={{ width: '50%' }} src="/assets/Tailored.png" alt="" />
-            <h5>Tailored Security</h5>
+            <h5 style={{ fontSize: 'x-large' }}>Tailored Security</h5>
             <p>
               Designed specifically for financial institutions, telecom sector & handset
               industry, combining robust technology with user-centric features.
@@ -152,7 +152,7 @@ const Tcops = () => {
 
       
       <section className="expansion-container">
-        <h2 className="about-us-headinga" style={{color:'white'}}>Distinctive Features Without Repetition</h2>
+        <h2 className="about-us-headinga" style={{color:'white'}}>Distinctive Features <span className="highlight">Without Repetition</span></h2>
         <p className="about-us-container">
           TCOPS Finance Locker incorporates a suite of features designed to maximize
           security and streamline asset management. Each feature is purpose-built to
@@ -205,31 +205,31 @@ const Tcops = () => {
         </div>
       </section>
 
-      <section className="expansion-container">
-        <h2 className="about-us-headinga" style={{color:'white'}}>Market Impact and Customer Success</h2>
+      <section className="expansion-container" style={{ background : "white" }}>
+        <h2 className="about-us-headinga" style={{color:'black'}}><span className="highlight">Market Impact</span> and Customer Success</h2>
         <p className="about-us-container">
-          Redwolf Hi-Tech’s innovations have significantly impacted market, delivering measurable benefits:
+          Red Wolf Info Tech’s innovations have significantly impacted market, delivering measurable benefits:
         </p>
 
         <div className="card-grid">
           <div className="expansion-card">
             <img style={{ width: '35%' }} src="/assets/Asset-Recovery.webp" alt="" />
-            <h5 style={{ fontSize: 'x-large' }}>Enhanced Payment Recovery</h5>
-            <p>Faster, more efficient device retrieval reduces losses from EMI defaults.</p>
+            <h5 style={{ fontSize: 'x-large' ,color:'black'}}>Enhanced Payment Recovery</h5>
+            <p style={{color:'black'}}>Faster, more efficient device retrieval reduces losses from EMI defaults.</p>
           </div>
 
           <div className="expansion-card">
             <img style={{ width: '35%' }} src="/assets/Improved Compliance.png" alt="" />
-            <h5 style={{ fontSize: 'x-large' }}>Improved Compliance</h5>
-            <p>
+            <h5 style={{ fontSize: 'x-large',color:"black" }}>Improved Compliance</h5>
+            <p style={{color:'black'}}>
               Advanced monitoring ensures institutions adhere to regulatory standards.
             </p>
           </div>
 
           <div className="expansion-card">
             <img style={{ width: '35%' }} src="/assets/Increased Efficiency.png" alt="" />
-            <h5 style={{ fontSize: 'x-large' }}>Operational Efficiency</h5>
-            <p>Automated security protocols minimize manual intervention, saving time and resources.</p>
+            <h5 style={{ fontSize: 'x-large' ,color:'black'}}>Operational Efficiency</h5>
+            <p style={{color:'black'}}>Automated security protocols minimize manual intervention, saving time and resources.</p>
           </div>
         </div>
       </section>

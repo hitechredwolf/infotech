@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 // import PrivacyPolicy from './PrivacyPolicy';
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "./images/redwolflogo.png";
 
 const Footer = () => {
@@ -12,8 +12,8 @@ const Footer = () => {
                                         <img src={logo} alt="Device Secure Logo" className="footer logo" />
 
                                         <div className="media-icons">
-                                                <a href="https://www.facebook.com/share/1HBHtkxp9J/?mibextid=wwXIfr"><i className="fab fa-facebook-f"></i></a>
-                                                <a href="https://www.instagram.com/redwolfhitech"><i className="fab fa-instagram"></i></a>
+                                                <a href="https://www.facebook.com/RedWolfInfoTech"><i className="fab fa-facebook-f"></i></a>
+                                                <a href="https://www.instagram.com/redwolfinfotech/"><i className="fab fa-instagram"></i></a>
                                                 <a href="https://www.linkedin.com/company/redwolfhitech1/"><i className="fab fa-linkedin-in"></i></a>
                                                 <a href="https://youtube.com/@redwolfhitech"><i className="fab fa-youtube"></i></a>
                                         </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                                         <ul className="box">
                                                 <li className="link_name">Address</li>
                                                 <li className="address">
-                                                        Red Wolf info-tech Pvt.Ltd. <br />
+                                                        Red Wolf Info Tech Pvt Ltd. <br />
                                                         Assotech Business Cresterra, <br />
                                                         Unit-214, Tower-4 <br />
                                                         Sector 135, Noida-201305.
@@ -50,7 +50,7 @@ const Footer = () => {
                                                         <Routes> */}
                                                 <li><Link to="/Terms">Term & Condition</Link></li>
                                                 <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
-                                                
+
                                                 {/* add other routes */}
                                                 {/* </Routes>
                                                 </Router> */}
@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className="bottom-details">
                                 <div className="bottom_text">
                                         <span className="copyright_text">
-                                                Copyright © 2025 <a href="#">Red Wolf info-tech Pvt.Ltd.</a> All rights reserved
+                                                Copyright © 2025 <a href="#">Red Wolf Info Tech Pvt Ltd.</a> All Rights Reserved
                                         </span>
                                         {/* <span className="policy_terms">
                                                 <a href="pp.html">Privacy policy</a>

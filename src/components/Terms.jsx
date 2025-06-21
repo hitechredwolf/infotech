@@ -134,8 +134,47 @@ const Terms = () => {
             </div>
 
 
-            
 
+            <div className="serviceInfoContainer">
+                <h1 className="termsAndConditionsHeading">Terms & Conditions For Speaker</h1>
+                <h6 className="serviceLead"></h6>
+                <p className="serviceDetails">
+                    WARRANTY SERVICE TYPE - For Any Warranty Related Issues,
+                    <br />
+                    Please Call The Red Wolf Customer Support - +91-9988908111 & support@redwolfinfotech.com
+                    <br />
+                    WARRANTY - 6 Months
+                    <br />
+                    No Warranty In Classic and Brass Model
+                    <br />
+                    COVERED IN WARRANTY - Manufacturing Defects
+                    <br />
+                    NOT COVERED IN WARRANTY - Physical Damages
+                    <br />
+                    ALL ABOVE MENTIONED PRICES ARE INCLUDING GST.
+                </p>
+                <div className="secionLine lineColorBlue"></div>
+            </div>
+
+
+            <div className="serviceInfoContainer">
+                <h1 className="termsAndConditionsHeading">Terms & Conditions For LED TV's</h1>
+                <h6 className="serviceLead"></h6>
+                <p className="serviceDetails">
+                    WARRANTY SERVICE TYPE - For Any Warranty Related Issues,
+                    <br />
+                    Please Call The Red Wolf Customer Support - +91-9988908111 & support@redwolfinfotech.com
+                    <br />
+                    WARRANTY - 1 Year
+                    <br />
+                    COVERED IN WARRANTY - Manufacturing Defects
+                    <br />
+                    NOT COVERED IN WARRANTY - Physical Damages
+                    <br />
+                    ALL ABOVE MENTIONED PRICES ARE INCLUDING GST.
+                </p>
+                <div className="secionLine lineColorBlue"></div>
+            </div>
             {/* <h4 className="closeTerms">
                 <a href="/index.html">CLOSE TERMS AND CONDITIONS</a>
             </h4> */}

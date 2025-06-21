@@ -32,15 +32,18 @@ const testimonialsData = [
     //     name: "Jhon",
     //     img: img2,
     // },
-    // {
-    //     text: "Working with Be Better, was one of the best career decisions I've made. Their dedication resulted in a brand identity that truly resonates with my audience. Invest in your personal brand with them – you won't regret it!",
-    //     name: "Katie",
-    //     img: img3,
-    // },
+
     {
         text: "Great ideas don’t stop at one industry — and neither do we. From managing execution to driving product excellence, my focus is on turning bold ideas into real-world solutions. Red Wolf stands for more than just tech — it stands for trust discipline, and a deep understanding of what India truly needs in a modern brand.",
         name: "Pankaj Chaturvedi – Co-Founder & Director",
         img: img2,
+    },
+
+
+    {
+        text: "What started as a vision between two minds has grown into amovement powered by innovation, people, and performance.Red Wolf Info Tech is built for the future — and we’re justgetting started.",
+        name: "Our Vision, Together",
+        // img: img3,
     },
 ];
 
