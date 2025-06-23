@@ -4,7 +4,9 @@ import pro from "../components/images/pro.jpg";
 import Plus from "../components/images/plus.jpg";
 import imac from "../components/images/Imac.jpg";
 import "animate.css";
-
+import d1 from "../components/images/d1.gif";
+import d2 from "../components/images/d2.gif";
+import d3 from "../components/images/d3.gif";
 import sImage1 from "../components/images/speaker1.jpg";
 import sImage2 from "../components/images/TCOPS IMAC.jpeg";
 import sImage3 from "../components/images/speaker3.jpg";
@@ -81,7 +83,7 @@ const Tcops = () => {
       </div>
 
  
-       
+{/*        
  <section className="v1"style={{ background : "white" }}>
         <h2 className="h1" style={{color:'black'}}><span className="highlight">The TCOPS Finance Locker</span> – Our Flagship Product</h2>
         <p className="about-us-container">
@@ -114,7 +116,56 @@ const Tcops = () => {
             </p>
           </div>
         </section>
-      </section>
+      </section> */}
+
+
+
+ <section className="v1" style={{ background: "white" }}>
+  <h2 className="h1" style={{ color: 'black' }}>
+    <span className="highlight">The TCOPS Finance Locker</span> – Our Flagship Product
+  </h2>
+  <p className="about-us-container">
+    At the core of our success is TCOPS Finance Locker, an advanced mobile
+    security application designed specifically for the telecom industry. Unlike
+    traditional security apps, TCOPS Finance Locker addresses the unique
+    challenges faced by the mobile market when customers delay or default on
+    EMI payments. This solution empowers financial institutions to monitor and
+    control mobile assets with unparalleled precision.
+  </p>
+  <br />
+
+  <section className="card1">
+    <div className="card">
+      <figure style={{ textAlign: "center" }}>
+        <img style={{ width: '50%' }} src={d3} alt="Cross-Platform" />
+        <figcaption>Cross-Platform Versatility</figcaption>
+      </figure>
+      <h5 style={{ fontSize: 'x-large' }}>Cross-Platform Versatility</h5>
+      <p>Available on Android, iOS, and compatible with refurbished devices.</p>
+    </div>
+
+    <div className="card">
+      <figure style={{ textAlign: "center" }}>
+        <img style={{ width: '50%' }}  src={d2} alt="Comprehensive Control" />
+        <figcaption>Comprehensive Control</figcaption>
+      </figure>
+      <h5 style={{ fontSize: 'x-large' }}>Comprehensive Control</h5>
+      <p>Enables remote device management, mitigating unauthorized usage and risk.</p>
+    </div>
+
+    <div className="card">
+      <figure style={{ textAlign: "center" }}>
+        <img style={{ width: '50%' }} src={d1} alt="Tailored Security" />
+        <figcaption>Tailored Security</figcaption>
+      </figure>
+      <h5 style={{ fontSize: 'x-large' }}>Tailored Security</h5>
+      <p>
+        Designed specifically for financial institutions, telecom sector & handset
+        industry, combining robust technology with user-centric features.
+      </p>
+    </div>
+  </section>
+</section> 
 
 
       {/* Detailed Section for Each Product */}

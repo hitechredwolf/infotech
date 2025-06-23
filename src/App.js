@@ -26,6 +26,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Terms" element={<Terms />} />
          <Route path="/More" element={<More />} />
+         
       </Routes>
       <Footer />
     </>
