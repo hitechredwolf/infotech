@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import "./About.css";
-import { FaLock, FaTv, FaVolumeUp } from "react-icons/fa";
+// import { FaLock, FaTv, FaVolumeUp } from "react-icons/fa";
 import bannerImage from "./images/About baner.jpg"; // Adjust path based on your structure
 
-import vibrantImg from './images/102inch.jpg';
-import innovativeImg from './images/68inch.jpg';
-import fashionableImg from './images/78inch.jpg';
-import premiumImg from './images/42inch.jpg';
 import Catagories from "./images/productcat.png"
+import vibrant from "./images/vibrant-0513-3.webp"
+import Innovative from "./images/innovative-0513-3.webp"
+import Fashionablee from "./images/fashionable-0513-3.webp"
+import Premium from "./images/premium-0513-3.webp"
+
 // import EventSection from "../components/";
 
 
@@ -80,27 +81,27 @@ const About = () => {
   const brandData = [
     {
       title: "Vibrant",
-      img: vibrantImg,
+      img: vibrant,
       heading: "VIBRANT",
-      desc: "To constantly explore, stay self-driven and keep technology alive.",
+      desc: "To spark curiosity, lead with energy, and bring boldness to every innovation we create.",
     },
     {
       title: "Innovative",
-      img: innovativeImg,
+      img:Innovative,
       heading: "INNOVATIVE",
-      desc: "To go beyond our limits and develop cutting-edge, sustainable technologies.",
+      desc: "To challenge convention and craft intelligent, future-ready solutions that redefine everyday experiences.",
     },
     {
       title: "Fashionable",
-      img: fashionableImg,
+      img: Fashionablee,
       heading: "FASHIONABLE",
-      desc: "To create a diverse sensory experience through the combination of technology and art.",
+      desc: "To fuse modern design with smart tech — delivering style, sophistication, and performance in every product.",
     },
     {
       title: "Premium",
-      img: premiumImg,
+      img: Premium,
       heading: "PREMIUM",
-      desc: "To pursue ecological concepts, explore aesthetic philosophy and adopt human-centered practice.",
+      desc: "To uphold superior quality, thoughtful design, and a seamless experience across everything we build.",
     },
   ];
 
@@ -274,44 +275,44 @@ const About = () => {
       </div>
 
 
-<div className="event-section">
-  <h2 className="section-title">Our Events</h2>
+      <div className="event-section">
+        <h2 className="section-title">Our Events</h2>
 
-  <div className="card-container">
-    {eventsData.map((event) => (
-      <div
-        key={event.id}
-        className="event-card"
-        onClick={() => setSelectedEvent(event)}
-      >
-        <img src={event.cover} alt="event-thumbnail" className="card-img" />
-        <h3>{event.title}</h3>
-      </div>
-    ))}
-  </div>
-
-  {selectedEvent && (
-    <div className="modal-overlay" onClick={() => setSelectedEvent(null)}>
-      <div
-        className="modal-content"
-        onClick={(e) => e.stopPropagation()} // Prevent modal close on inner click
-      >
-        <button className="close-btn" onClick={() => setSelectedEvent(null)}>
-          &times;
-        </button>
-        <h3>{selectedEvent.title} Gallery</h3>
-        <div className="image-grid">
-          {selectedEvent.images.map((img, idx) => (
-            <img key={idx} src={img} alt={`event-img-${idx}`} />
+        <div className="card-container">
+          {eventsData.map((event) => (
+            <div
+              key={event.id}
+              className="event-card"
+              onClick={() => setSelectedEvent(event)}
+            >
+              <img src={event.cover} alt="event-thumbnail" className="card-img" />
+              <h3>{event.title}</h3>
+            </div>
           ))}
         </div>
+
+        {selectedEvent && (
+          <div className="modal-overlay" onClick={() => setSelectedEvent(null)}>
+            <div
+              className="modal-content"
+              onClick={(e) => e.stopPropagation()} // Prevent modal close on inner click
+            >
+              <button className="close-btn" onClick={() => setSelectedEvent(null)}>
+                &times;
+              </button>
+              <h3>{selectedEvent.title} Gallery</h3>
+              <div className="image-grid">
+                {selectedEvent.images.map((img, idx) => (
+                  <img key={idx} src={img} alt={`event-img-${idx}`} />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
-  )}
-</div>
 
 
- {/* <div className="event-section">
+      {/* <div className="event-section">
       <h2 className="section-title">Our Events</h2>
 
       <div className="card-container">
@@ -348,7 +349,7 @@ const About = () => {
     </div> */}
 
       {/* <EventSection /> */}
-{/* 
+      {/* 
       <div className="event-section">
         <h2 className="section-title">Our Events</h2>
         <div className="card-container">

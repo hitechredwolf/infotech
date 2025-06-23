@@ -462,7 +462,7 @@ export default function Led() {
       {/* second code */}
 
       <div className="launches-container">
-        <h2>Newest Launches</h2>
+        <h2 style={{ color: " rgb(204, 17, 26)" }}>Newest Launches</h2>
         <div className="tabs">
           <span className="active-tab">2025 New Lineup</span>
           <span>Mini LED & QLED TVs</span>
@@ -510,7 +510,7 @@ export default function Led() {
 
 
       <section className="rw-slider-section">
-        <h2>Discover More with Red Wolf</h2>
+        <h2 style={{ color: " rgb(204, 17, 26)" }}>Discover More with Red Wolf</h2>
         <div className="rw-slider-container">
           <button className="rw-slider-btn prev" onClick={handlePrev}>&#8249;</button>
 
