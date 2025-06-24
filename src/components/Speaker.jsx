@@ -4,7 +4,9 @@ import "./speeker.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "animate.css";
-
+import d4 from "../components/images/d4.gif";
+import d5 from "../components/images/d5.gif";
+import d6 from "../components/images/d6.gif";
 // Images
  import sImage2 from "../components/images/sp1.jpeg";
   import sImage1 from "../components/images/sp2.jpeg";
@@ -74,7 +76,7 @@ function Speaker() {
       </div>
 
       {/* New: Top Features */}
-  <div className="features-section1">
+  {/* <div className="features-section1">
   <h2 className="features-heading">Top Features That Define Us</h2>
   <div className="features-grid">
     <div className="feature-card">
@@ -90,8 +92,48 @@ function Speaker() {
       <p style={{ fontWeight:'400' ,color:"black"}}>Sleek curves, premium finish — sound has never looked so good.</p>
     </div>
   </div>
-</div>
+</div> */}
 
+<div className="features-section1">
+  <h2 className="features-heading">Top Features That Define Us</h2>
+  <div className="features-grid">
+    <div className="feature-card">
+      <img
+        src={d5}
+        alt="Smart Connectivity"
+        className="feature-gif"
+      />
+      <h3 style={{ fontWeight: '700' }}>Smart Connectivity</h3>
+      <p style={{ fontWeight: '400', color: 'black' }}>
+        Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.
+      </p>
+    </div>
+
+    <div className="feature-card">
+      <img
+        src={d4}
+        alt="Studio-Quality Sound"
+        className="feature-gif"
+      />
+      <h3 style={{ fontWeight: '700' }}>Studio-Quality Sound</h3>
+      <p style={{ fontWeight: '400', color: 'black' }}>
+        Engineered for precision and clarity with immersive surround effects.
+      </p>
+    </div>
+
+    <div className="feature-card">
+      <img
+        src={d6}
+        alt="Minimalist Design"
+        className="feature-gif"
+      />
+      <h3 style={{ fontWeight: '700' }}>Minimalist Design</h3>
+      <p style={{ fontWeight: '400', color: 'black' }}>
+        Sleek curves, premium finish — sound has never looked so good.
+      </p>
+    </div>
+  </div>
+</div>
 
       {/* Existing: Why Choose Us */}
       <div className="why-choose-section animate__animated animate__fadeIn">

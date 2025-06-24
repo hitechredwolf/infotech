@@ -318,6 +318,7 @@ import spotify from './images/Spotify.png';
 import apple from './images/appleitunes.png';
 // import google from './images/g';
 import sony from './images/Sony-Liv.jpeg';
+import wolfled from "./images/wolfled.jpg"
 
 
 // import vibrantImg from './images/102inch.jpg';
@@ -325,6 +326,7 @@ import sony from './images/Sony-Liv.jpeg';
 // import fashionableImg from './images/78inch.jpg';
 // import premiumImg from './images/42inch.jpg';
 export default function Led() {
+
 
 
   const products = [
@@ -350,41 +352,83 @@ export default function Led() {
     },
   ];
 
-
   const cards = [
     {
       image: LED1,
       title: '32" Smart LED TV',
       tag: 'Frameless and feature-rich, this Smart 32" TV supports Chromecast, Google Assistant, and a smooth viewing experience.',
-      perageaph: 'RAM: 1GB | ROM: 8GB',
-      perageaph: 'Chromecast, Google Assistant, Voice Remote',
-      perageaph: 'Dual USB, Dual HDMI',
-      perageaph: 'Frameless HD Display | Free Wall Mount',
-
+      details: [
+        'RAM: 1GB | ROM: 8GB',
+        'Chromecast, Google Assistant, Voice Remote',
+        'Dual USB, Dual HDMI',
+        'Frameless HD Display | Free Wall Mount'
+      ]
     },
     {
       image: LED2,
-      title: ' 24" Smart LED TV',
-      // date: '2025-04-28',
+      title: '24" Smart LED TV',
       tag: 'The same sleek design with the added benefit of Smart features — perfect for streaming, casual viewing, and compact setups.',
+      details: [
+        'Built-in Woofer | Smart OS',
+        'Resolution: 1280x960',
+        'Connectivity: HDMI, USB, VGA, EarphoneI',
+        'RAM: 512MB',
+        'Free Wall Mount | 5 Sound Modes'
+      ]
     },
     {
       image: LED3,
       title: '98" WebOS LED TV',
-      // date: '2025-04-25',
       tag: 'The grandest display in the range — a true home-theatre experience. Powerful visuals and immersive Dolby audio.',
+      details: [
+        '98" Ultra HD Frameless Display',
+        'Voice Assistant | 3 HDMI, 2 USB',
+        'Dual Band Wi-Fi | Free Wall Mount',
+
+      ]
     },
     {
       image: LED4,
-      title: ' 65" WebOS LED TV',
-      // date: '2025-04-25',
+      title: '65" WebOS LED TV',
       tag: 'Step into a cinematic experience with this large-screen 4K Ultra HD Smart TV. Voice command and powerful audio included.',
+      details: [
+        'RAM: 1GB | ROM: 8GB',
+        'Dolby Audio | Frameless Design',
+        'Dual Band Wi-Fi | Free Wall Mount'
+      ]
     },
     {
       image: television,
       title: '55" Android LED TV',
-      // date: '2025-04-25',
       tag: 'Ultra HD display with Android 6.0 and a 4-core processor. Packed with performance for OTT streaming and gaming.',
+      details: [
+        'RAM: 1GB | ROM: 8GB',
+        'Ultra HD | 3 HDMI, 3 USB',
+        'Dolby Audio | Voice Remote',
+        'Dual Band Wi-Fi | Free Wall Mount',
+      ]
+    },
+    {
+      image: wolfled,
+      title: '85" " WebOS LED TV',
+      tag: 'Ideal for large home setups, delivering seamless 4K quality and premium sound. Built to impress.',
+      details: [
+        'RAM: 1GB | ROM: 8GB',
+        '3 HDMI, 2 USB | Google Assistant',
+        'Dolby Audio | Free Wall Mount',
+      ]
+    },
+    {
+      image: television,
+      title: '24" Non-Smart LED TV',
+      tag: 'Perfect for compact spaces, this 24" LED TV delivers crisp HD visuals with a built-in woofer for clear, punchy sound. Great for basic entertainment and gaming.',
+      details: [
+        'Resolution: 1280x960',
+        'Audio Output: 10W',
+        'Connectivity: 2x HDMI, 2x USB, 1x VGA, Earphone Out',
+        ' RAM: 512MB',
+        ' Free Wall Mount | Slim Design'
+      ]
     },
   ];
 
@@ -393,13 +437,13 @@ export default function Led() {
     // Repeat again for smooth infinite effect
     netflix, disney, prime, hulu, spotify, apple, sony,
   ];
+
   const trackRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
   const [index, setIndex] = useState(0);
-
   const updateWidth = () => {
-    const card = document.querySelector('.slider-card');
-    if (card) setCardWidth(card.offsetWidth);
+    const card = document.querySelector('.rw-slider-card');
+    if (card) setCardWidth(card.offsetWidth + 20); // 20px for margin/gap
   };
 
   useEffect(() => {
@@ -414,6 +458,7 @@ export default function Led() {
       setIndex(prev => prev + 1);
     }
   };
+
 
   const handlePrev = () => {
     if (index > 0) {
@@ -510,7 +555,7 @@ export default function Led() {
 
 
       <section className="rw-slider-section">
-        <h2 style={{ color: " rgb(204, 17, 26)" }}>Discover More with Red Wolf</h2>
+        <h2 style={{ color: 'rgb(204, 17, 26)' }}>Discover More with Red Wolf</h2>
         <div className="rw-slider-container">
           <button className="rw-slider-btn prev" onClick={handlePrev}>&#8249;</button>
 
@@ -520,8 +565,13 @@ export default function Led() {
                 <img src={card.image} alt={`Slide ${i}`} />
                 <h4>{card.title}</h4>
                 <span>{card.tag}</span>
-                <br />
-                <p>{card.perageaph}</p>
+                {card.details && (
+                  <p>
+                    {card.details.map((line, idx) => (
+                      <span key={idx}>{line}<br /></span>
+                    ))}
+                  </p>
+                )}
               </div>
             ))}
           </div>

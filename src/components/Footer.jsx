@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className="bottom-details">
                                 <div className="bottom_text">
                                         <span className="copyright_text">
-                                                Copyright © 2025 <a href="#">Red Wolf Info Tech Pvt Ltd.</a> All Rights Reserved
+                                                Copyright © 2025 <a href="#">Red Wolf Info Tech Pvt Ltd.</a><b> All Rights Reserved</b>
                                         </span>
                                         {/* <span className="policy_terms">
                                                 <a href="pp.html">Privacy policy</a>
