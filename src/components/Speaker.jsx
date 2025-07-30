@@ -9,7 +9,7 @@ import d5 from "../components/images/d5.gif";
 import d6 from "../components/images/d6.gif";
 // Images
  import sImage2 from "../components/images/sp1.jpeg";
-  import sImage1 from "../components/images/sp2.jpeg";
+  import sImage1 from "../components/images/sep3.jpeg";
    import sImage from "../components/images/speaker latest.jpeg";
 import m1 from "../components/images/m1.jpeg";
 import m2 from "../components/images/m2.jpeg";

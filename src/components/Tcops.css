@@ -64,7 +64,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 0 10px;
+  padding: 0px 10px 20px 0px;
 }
 
 /* Individual Product Card */
@@ -404,7 +404,7 @@ html, body {
 }
 
 .card {
-  width: 300px;
+  width: 360px;
   background: #fff;
   padding: 20px;
   border-radius: var(--radius);
@@ -582,7 +582,41 @@ html, body {
 
 
 
+/* ================================
+   Card Grid Layout
+================================ */
+/* 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
 
 
+.expansion-card img {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  background: white;
+  padding: 10px;
+}
 
+@media (max-width: 768px) {
+  .about-us-headinga {
+    font-size: 2rem;
+  }
 
+  .about-us-container {
+    font-size: 1rem;
+  }
+
+  .expansion-card {
+    padding: 20px 15px;
+  }
+}
+
+ */

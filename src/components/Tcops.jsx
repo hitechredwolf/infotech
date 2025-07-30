@@ -7,6 +7,17 @@ import "animate.css";
 import d1 from "../components/images/d1.gif";
 import d2 from "../components/images/d2.gif";
 import d3 from "../components/images/d3.gif";
+
+// import d4 from "../components/images/Remote management d1.gif";
+// import d5 from "../components/images/Network d1.gif";
+// import d6 from "../components/images/camera d2.gif";
+// import d7 from "../components/images/location d1.gif";
+// import d8 from "../components/images/control d1.gif";
+// import d9 from "../components/images/Device d1.gif";
+
+import d10 from "../components/images/Payme d1.gif";
+import d11 from "../components/images/Improved d1.gif";
+import d12 from "../components/images/Efficiency d1.gif";
 import sImage1 from "../components/images/speaker1.jpg";
 import sImage2 from "../components/images/TCOPS IMAC.jpeg";
 import sImage3 from "../components/images/speaker3.jpg";
@@ -201,7 +212,7 @@ const Tcops = () => {
  <div>
 
 
-      
+       
       <section className="expansion-container">
         <h2 className="about-us-headinga" style={{color:'white'}}>Distinctive Features <span className="highlight">Without Repetition</span></h2>
         <p className="about-us-container">
@@ -254,8 +265,74 @@ const Tcops = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> 
 
+      
+{/* 
+<section className="expansion-container">
+  <h2 className="about-us-headinga" style={{ color: 'white' }}>
+    Distinctive Features <span className="highlight">Without Repetition</span>
+  </h2>
+  <p className="about-us-container">
+    TCOPS Finance Locker incorporates a suite of features designed to maximize
+    security and streamline asset management. Each feature is purpose-built to
+    ensure that every facet of mobile security is addressed.
+  </p>
+
+  <div className="card-grid">
+    <div className="expansion-card">
+      <img style={{ width: '50%' }} src={d4} alt="Remote Device Management" />
+      <h5 style={{ fontSize: 'x-large' }}>Remote Device Management</h5>
+      <p>
+        Retailers/shop-keepers can lock/unlock devices instantly, ensuring immediate
+        action on EMI delays or defaults.
+      </p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '33%' }} src={d8} alt="Selective Application Control" />
+      <h5 style={{ fontSize: 'x-large' }}>Selective Application Control</h5>
+      <p>Restricts access to sensitive applications, preventing unauthorized usage.</p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '50%' }} src={d6} alt="Integrated Camera Control" />
+      <h5 style={{ fontSize: 'x-large' }}>Integrated Camera Control</h5>
+      <p>Disables the camera to enhance privacy and prevent unauthorized image capture.</p>
+    </div>
+  </div>
+
+  <div className="card-grid">
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d5} alt="Dynamic SIM and Network Monitoring" />
+      <h5 style={{ fontSize: 'x-large' }}>Dynamic SIM and Network Monitoring</h5>
+      <p>Tracks real-time SIM changes to reinforce fraud prevention.</p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d7}alt="Advanced Location Services" />
+      <h5 style={{ fontSize: 'x-large' }}>Advanced Location Services</h5>
+      <p>Supports both real-time and offline location tracking to monitor device whereabouts.</p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d9} alt="Proactive Device Maintenance" />
+      <h5 style={{ fontSize: 'x-large' }}>Proactive Device Maintenance</h5>
+      <p>
+        Controls Wi-Fi, Bluetooth, and airplane mode for complete security oversight.
+      </p>
+    </div>
+  </div>
+</section>
+ */}
+
+
+
+
+
+
+
+{/* 
       <section className="expansion-container" style={{ background : "white" }}>
         <h2 className="about-us-headinga" style={{color:'black'}}><span className="highlight">Market Impact</span> and Customer Success</h2>
         <p className="about-us-container">
@@ -283,7 +360,48 @@ const Tcops = () => {
             <p style={{color:'black'}}>Automated security protocols minimize manual intervention, saving time and resources.</p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+<section className="expansion-container" style={{ background: "white" }}>
+  <h2 className="about-us-headinga" style={{ color: 'black' }}>
+    <span className="highlight">Market Impact</span> and Customer Success
+  </h2>
+  <p className="about-us-container">
+    Red Wolf Info Tech’s innovations have significantly impacted market, delivering measurable benefits:
+  </p>
+
+  <div className="card-grid">
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d10} alt="Enhanced Payment Recovery" />
+      <h5 style={{ fontSize: 'x-large', color: 'black' }}>Enhanced Payment Recovery</h5>
+      <p style={{ color: 'black' }}>
+        Faster, more efficient device retrieval reduces losses from EMI defaults.
+      </p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d11} alt="Improved Compliance" />
+      <h5 style={{ fontSize: 'x-large', color: "black" }}>Improved Compliance</h5>
+      <p style={{ color: 'black' }}>
+        Advanced monitoring ensures institutions adhere to regulatory standards.
+      </p>
+    </div>
+
+    <div className="expansion-card">
+      <img style={{ width: '35%' }} src={d12} alt="Operational Efficiency" />
+      <h5 style={{ fontSize: 'x-large', color: 'black' }}>Operational Efficiency</h5>
+      <p style={{ color: 'black' }}>
+        Automated security protocols minimize manual intervention, saving time and resources.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
     </div>
 
     

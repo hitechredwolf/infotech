@@ -10,7 +10,12 @@ import 'animate.css';
 import './Home.css';
 // import CounterCard from './components/CounterCard';
 import Testimonials from './Testimonials';
-import bannerAi from "./images/bannerAi.png";
+
+
+
+// import bannerAi from "./images/bannerAi.png";
+import bannerAi from "./images/Banner 1.jpg";
+
 import webbanner from "./images/web banner2.png";
 // import banner1 from "./images/banner1.png";
 import Testimonials1 from './Testimonials1';

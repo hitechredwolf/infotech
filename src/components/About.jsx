@@ -189,55 +189,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* 
-      <section className="section white-bg">
-        <h2 className="section-title">Our Vision</h2>
-        <ul className="vision-list">
-          <li>Expanding Market Reach</li>
-          <li>Driving Continuous Innovation</li>
-          <li>Elevating User Experience</li>
-        </ul>
-      </section> */}
+      
+      
 
-      {/* <section className="section">
-        <h2 className="section-title"><FaLock /> TCOPS Finance Locker</h2>
-        <p className="description">
-          TCOPS Finance Locker is our advanced mobile control solution for EMI
-          recovery and asset protection.
-        </p>
-        <ul className="feature-list">
-          <li>Android, iOS, and refurbished phone compatibility</li>
-          <li>Remote lock/unlock access</li>
-          <li>App, camera, and connectivity restrictions</li>
-          <li>SIM/network monitoring</li>
-          <li>Live and offline location tracking</li>
-        </ul>
-      </section> */}
+     
 
-      {/* <section className="section white-bg">
-        <h2 className="section-title"><FaTv /> Redwolf LED TVs</h2>
-        <p className="description">
-          Transform everyday viewing into immersive entertainment.
-        </p>
-        <ul className="feature-list">
-          <li>Screen sizes from 24" to 98" with 4K & Full HD</li>
-          <li>Android & WebOS, Dolby Audio, Chromecast support</li>
-          <li>Voice control with Google Assistant</li>
-        </ul>
-      </section>
-
-      <section className="section">
-        <h2 className="section-title"><FaVolumeUp /> Redwolf Speakers</h2>
-        <p className="description">
-          Designed for every mood—celebrations, karaoke, or immersive music.
-        </p>
-        <ul className="feature-list">
-          <li>12W to 250W RMS output</li>
-          <li>Bluetooth 5.0, USB, AUX, FM</li>
-          <li>RGB lighting, LED display, and mic support</li>
-        </ul>
-      </section> */}
-
+     
 
       <section>
         <img src={Catagories} alt="catagories" style={{ width: '100%' }} />
@@ -312,72 +269,7 @@ const About = () => {
       </div>
 
 
-      {/* <div className="event-section">
-      <h2 className="section-title">Our Events</h2>
-
-      <div className="card-container">
-        {eventsData.map((event) => (
-          <div
-            key={event.id}
-            className="event-card"
-            onClick={() => setSelectedEvent(event)}
-          >
-            <img src={event.cover} alt="event-thumbnail" className="card-img" />
-            <h3>{event.title}</h3>
-          </div>
-        ))}
-      </div>
-
-      {selectedEvent && (
-        <div className="modal">
-          <div className="modal-content">
-            <button
-              className="close-btn"
-              onClick={() => setSelectedEvent(null)}
-            >
-              X
-            </button>
-            <h3>{selectedEvent.title} Gallery</h3>
-            <div className="image-grid">
-              {selectedEvent.images.map((img, idx) => (
-                <img key={idx} src={img} alt={`event-img-${idx}`} />
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-    </div> */}
-
-      {/* <EventSection /> */}
-      {/* 
-      <div className="event-section">
-        <h2 className="section-title">Our Events</h2>
-        <div className="card-container">
-          {eventsData.map((event) => (
-            <div
-              key={event.id}
-              className="event-card"
-              onClick={() => setSelectedEvent(event)}
-            >
-              <h3>{event.title}</h3>
-            </div>
-          ))}
-        </div>
-
-        {selectedEvent && (
-          <div className="modal">
-            <div className="modal-content">
-              <button className="close-btn" onClick={() => setSelectedEvent(null)}>X</button>
-              <h3>{selectedEvent.title} Gallery</h3>
-              <div className="image-grid">
-                {selectedEvent.images.map((img, idx) => (
-                  <img key={idx} src={img} alt={`event-img-${idx}`} />
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-      </div> */}
+  
     </div>
   );
 };
