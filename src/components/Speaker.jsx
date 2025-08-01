@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
+
+
 import "./speeker.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -75,24 +77,6 @@ function Speaker() {
         </p>
       </div>
 
-      {/* New: Top Features */}
-  {/* <div className="features-section1">
-  <h2 className="features-heading">Top Features That Define Us</h2>
-  <div className="features-grid">
-    <div className="feature-card">
-      <h3 style={{ fontWeight:'700' }}>Smart Connectivity</h3>
-      <p style={{ fontWeight:'400',color:"black"}}>Bluetooth 5.0, Wi-Fi, voice assistants — all under your command.</p>
-    </div>
-    <div className="feature-card">
-      <h3  style={{ fontWeight:'700' }}>Studio-Quality Sound</h3>
-      <p style={{ fontWeight:'400',color:"black"}}>Engineered for precision and clarity with immersive surround effects.</p>
-    </div>
-    <div className="feature-card">
-      <h3  style={{ fontWeight:'700' }}>Minimalist Design</h3>
-      <p style={{ fontWeight:'400' ,color:"black"}}>Sleek curves, premium finish — sound has never looked so good.</p>
-    </div>
-  </div>
-</div> */}
 
 <div className="features-section1">
   <h2 className="features-heading">Top Features That Define Us</h2>
@@ -193,86 +177,7 @@ function Speaker() {
         </button>
       </div>
 
-      {/* New: Testimonials */}
-      {/* <div className="testimonials-section animate__animated animate__slideInUp">
-        <h2>What Our Customers Say</h2>
-        <div className="testimonial-card animate__animated animate__bounceIn">
-          <p>“Absolutely mind-blowing sound quality! I'm never going back to regular speakers again.”</p>
-          <h4>- Priya D., Mumbai</h4>
-        </div>
-        <div className="testimonial-card animate__animated animate__bounceIn animate__delay-1s">
-          <p>“Easy to connect, beautiful design, and the bass is just 🤯”</p>
-          <h4>- Arjun M., Bengaluru</h4>
-        </div>
-      </div> */}
 
-{/* <section className="rw-testimonials">
-  <h2 className="rw-testimonials-title">What Our Customers Say</h2>
-  <div className="rw-testimonial-wrapper">
-    <div className="rw-testimonial-card rw-red-card">
-      <p>“Absolutely mind-blowing sound quality! I'm never going back to regular speakers again.”</p>
-      <h4>- Priya D., Mumbai</h4>
-    </div>
-    <div className="rw-testimonial-card rw-dark-card">
-      <p>“Easy to connect, beautiful design, and the bass is just 🤯”</p>
-      <h4>- Arjun M., Bengaluru</h4>
-    </div>
-    <div className="rw-testimonial-card rw-pink-card">
-      <p>“Perfect for parties — everyone was impressed by the audio punch!”</p>
-      <h4>- Rohan K., Pune</h4>
-    </div>
-    <div className="rw-testimonial-card rw-crimson-card">
-      <p>“Top-notch customer service and the sound clarity is unreal!”</p>
-      <h4>- Meera S., Delhi</h4>
-    </div>
-  </div>
-</section> */}
-
-
-
-{/* Testimonials Section */}
-{/* <section className="rw-testimonials-section">
-  <h2 className="rw-testimonials-title">Hear from Our Happy Customers</h2>
-  <div className="rw-testimonials-grid">
-    {[
-      {
-        name: "Rohit Sharma",
-        feedback: "The picture quality is phenomenal. It feels like watching in a real theater!",
-        img: "https://i.pravatar.cc/100?img=32"
-      },
-      {
-        name: "Neha Kapoor",
-        feedback: "Smart features are super smooth. YouTube and Netflix work like a charm!",
-        img: "https://i.pravatar.cc/100?img=45"
-      },
-      {
-        name: "Amit Verma",
-        feedback: "I bought the 50” Redwolf and my family absolutely loves it.",
-        img: "https://i.pravatar.cc/100?img=56"
-      }
-    ].map((cust, index) => (
-      <div className="rw-testimonial-card" key={index}>
-        <img src={cust.img} alt={cust.name} className="rw-testimonial-img" />
-        <p className="rw-testimonial-feedback">"{cust.feedback}"</p>
-        <h4 className="rw-testimonial-name">– {cust.name}</h4>
-      </div>
-    ))}
-  </div>
-</section> */}
-
-
-
-
-
-
-      {/* New: Our Mission */}
-      {/* <div className="mission-section animate__animated animate__zoomIn">
-        <h2>Our Mission</h2>
-        <p>
-          Redwolf Infotech aims to revolutionize how you experience sound — by blending technology, 
-          craftsmanship, and emotion into every speaker we build. It's not just audio, it's art.
-        </p>
-      </div> */}
 
 <section className="mission-section">
   <div className="mission-wrapper">
@@ -286,16 +191,7 @@ function Speaker() {
 </section>
 
 
-      {/* Footer Note */}
-
-      
-      {/* <div className="footer-note animate__animated animate__fadeInUp">
-        <h3>Ready to Amplify Your World?</h3>
-        <p>
-          Join thousands of satisfied users who’ve upgraded their audio game with Redwolf Infotech.
-          Experience sound the way it’s meant to be heard — bold, clear, and immersive.
-        </p>
-      </div> */}
+    
     </div>
   );
 }

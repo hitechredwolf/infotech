@@ -27,8 +27,6 @@ import front from "./images/frontspeaker.jpeg"
 
 import 'animate.css';
 
-
-
 function Home() {
   return (
 
