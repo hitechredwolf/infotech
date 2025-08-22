@@ -23,7 +23,7 @@ import inch from "./images/98inch.jpeg"
 import ledad from "./images/led-ad.jpeg"
 // import panindia from "./images/com-mappvideo.mp4"
 import front from "./images/frontspeaker.jpeg"
-
+import ChatBot from "./ChatBot";
 
 import 'animate.css';
 
@@ -311,9 +311,18 @@ function Home() {
           </div>
         </section>
         {/* ///////////////////////////////// */}
+        <ChatBot />
+
+        <a
+          href="https://wa.me/9214309236"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-icon"
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
         <Testimonials1 />
         <Testimonials />
-
       </header>
     </div>
   );

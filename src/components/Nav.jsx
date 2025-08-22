@@ -56,6 +56,7 @@ function Nav() {
                 <li><Link to="/more" onClick={() => setIsMobileMenuOpen(false)}>More</Link></li>
               </ul>
             </li>
+            <li className="nav-item"><Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link></li>
             <li className="nav-item"><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link></li>
             <li className="nav-item">
               <a href="https://admin.tcopsztpro.in/login" target="_blank" rel="noopener noreferrer">

@@ -161,3 +161,31 @@
         font-size: 0.85rem;
     }
 }
+
+
+
+
+
+/* ///////////// */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 120px;
+    /* ChatBot se thoda upar */
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 30px;
+    padding: 12px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10001;
+    /* ChatBot ke upar dikhane ke liye */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    color: white;
+}
