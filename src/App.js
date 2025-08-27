@@ -5,7 +5,6 @@ import About from "./components/About";
 import Tcops from "./components/Tcops";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
-import BlogDetail from "./components/BlogDetail";
 import Speaker from "./components/Speaker";
 import Led from "./components/Led";
 import Home from "./components/Home";
@@ -24,7 +23,6 @@ function App() {
         <Route path="/Tcops" element={<Tcops />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/speaker" element={<Speaker />} />
         <Route path="/Led" element={<Led />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />

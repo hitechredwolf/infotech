@@ -142,7 +142,7 @@ const ChatBot = () => {
         },
         {
             patterns: [/location|address|where/i],
-            reply: "We’re based in Chandigarh. Need directions?"
+            reply: "We’re based in Noida. Need directions?"
         },
         {
             patterns: [/contact|phone|call|number/i],
@@ -166,7 +166,7 @@ const ChatBot = () => {
         if (isOpen && messages.length === 0) {
             setIsTyping(true);
             setTimeout(() => {
-                setMessages([{ sender: "bot", text: "👋 Hello! Welcome to Support. How can I help you?" }]);
+                setMessages([{ sender: "bot", text: "👋 Hello! Welcome to Red Wolf. How can I help you?" }]);
                 setIsTyping(false);
             }, 500);
         }
@@ -207,7 +207,7 @@ const ChatBot = () => {
         let botReply = "";
 
         if (userMsgCount === 1) {
-            botReply = "🙏 Thank you for visiting, How can I help you sir";
+            botReply = "SORRY";
         } else if (userMsgCount === 2) {
             botReply = "⏳ Please wait, our team will respond shortly.";
         } else if (userMsgCount === 3) {

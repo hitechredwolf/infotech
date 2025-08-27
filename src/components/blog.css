@@ -245,3 +245,26 @@ body {
         margin-left: -2rem;
     }
 }
+
+
+
+/* pagination */
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background: #ff6600;
+}
