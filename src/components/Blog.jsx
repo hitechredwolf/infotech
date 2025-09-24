@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import blog1 from "./images/blog1.jpg";
-import blog2 from "./images/blog2.jpg";
+// import blog2 from "./images/blog2.jpg";
 import blog3 from "./images/vlog.jpg";
-import blog4 from "./images/yashled1.jpeg";
+import blog5 from "./images/Possss.jpg";
+
+import blog4 from "./images/Led Poster.jpg";
 import "./blog.css";
 
 const Blog = () => {
@@ -35,17 +37,17 @@ const Blog = () => {
         },
         {
             id: 2,
-            title: "Why Choose Red Wolf Speakers?",
-            desc: "At Red Wolf Info Tech, we believe sound isn’t just heard — it’s felt. That’s why our Redwolf Speaker Rock & Roll Series is designed to transform every space into a party zone, every beat into an experience, and every moment into a memory. 🎶✨",
-            img: blog2,
-            full: "Turn Up the Volume: Redwolf Speakers Rock & Roll Series At Red Wolf Info Tech, we believe sound isn’t just heard — it’s felt. That’s why our Redwolf Speaker Rock & Roll Series is designed to transform every space into a party zone, every beat into an experience, and every moment into a memory. 🎶✨ Why Choose Redwolf Speakers? 🔊 Powerful Sound, Crystal Clarity From thumping bass to sharp trebles, our speakers deliver immersive audio that brings music alive, whether indoors or outdoors. 🌈 RGB Party Lights More than just sound — it’s a show. Built-in RGB lights sync with your beats, setting the vibe for any party, get-together, or celebration. 🎤 Karaoke-Ready With support for karaoke, our speakers don’t just play music — they make you the star of the evening. Perfect for family nights, office parties, and friendly jam sessions. 🔋 All-Day Battery Power Engineered for performance, Redwolf speakers are built to last, keeping the music rolling from dusk till dawn. 📱 Seamless Connectivity Bluetooth-enabled with multiple input options (AUX, USB, and more), staying connected has never been easier. Where Style Meets Performance The Rock & Roll Series isn’t just about sound — it’s about making a statement. With sleek designs, dynamic lighting, and superior build quality, our speakers stand tall as the centerpiece of your celebrations. Whether it’s a house party, a rooftop evening, or a spontaneous road trip, Redwolf Speakers ensure you never miss a beat. 🎧🚀 Join the Redwolf Revolution At Red Wolf Info Tech, innovation meets lifestyle. With our LED TVs, EMI Locker, EV solutions, and Speakers, we’re shaping a smarter, connected, and more entertaining tomorrow. 👉 Experience the Redwolf Rock & Roll Speakers — where sound becomes an emotion and parties never stop. 📞 Contact us today: 9717660554 | 9988401333 🌐 www.redwolfinfotech.com"
+            title: "Red Wolf Trance Jr. – Compact Speaker, Powerful Sound",
+            desc: "When it comes to music, size doesn’t always define power. The Red Wolf Trance Jr. speaker is proof that great things come in compact designs. Engineered for music lovers who crave deep bass, crystal-clear sound, and portable convenience, Trance Jr. is your perfect audio partner for every occasion.",
+            img: blog5,
+            full: "Red Wolf Trance Jr. – Compact Speaker, Powerful Sound When it comes to music, size doesn’t always define power. The Red Wolf Trance Jr. speaker is proof that great things come in compact designs. Engineered for music lovers who crave deep bass, crystal-clear sound, and portable convenience, Trance Jr. is your perfect audio partner for every occasion. 🔊 Features that Stand Out Audio Jack Connectivity 🎧 Seamlessly plug and play with wired devices for uninterrupted music. Deep Bass Performance 🎶 Experience punchy lows and powerful sound that make every beat come alive. 8 Hours of Playtime 🔋 Long-lasting battery life ensures non-stop entertainment, whether it’s a party, a road trip, or a casual evening with friends. Bluetooth 5.0  Enjoy faster pairing, stable connections, and wireless freedom with the latest Bluetooth technology. 🌟 Why Choose Trance Jr.? The Trance Jr.isn’t just a speaker — it’s an experience.Designed for portability and performance, it’s perfect for gatherings, celebrations, or even solo music sessions.Available in sleek Black & Gray finishes, it blends style with power, making it a must - have addition to your audio gear. 🐺 Red Wolf Promise At Red Wolf, we don’t just create speakers — we create experiences.With Trance Jr., you get a product that is crafted for durability, designed for performance, and built to impress. Make every moment musical with Red Wolf Trance Jr.! 📞 9717660554 | 9988401333 🌐 www.redwolfinfotech.com"
         },
         {
             id: 6,
-            title: "Why Choose Red Wolf LED TV?",
-            desc: "Our latest range of Red Wolf LED TVs delivers stunning picture quality, powered by advanced display technology and immersive sound. From the green of the stadium to the tiniest details of the ball in motion, every frame is sharper, brighter, and more lifelike than ever before.",
+            title: "Red Wolf LED TV – Where Every Pixel Tells a Story",
+            desc: "In today’s fast-paced digital world, entertainment is more than just watching a show or a movie – it’s about experiencing every moment in its truest form. At Red Wolf Info Tech, we’ve crafted our Red Wolf LED TV to give your living room a cinematic transformation like never before.",
             img: blog4,
-            full: "Experience the Thrill of the Stadium at Home with Red Wolf LED TVs There’s nothing like the adrenaline rush of watching your favorite match live in a stadium — the roaring crowd, dazzling lights, and every breathtaking moment. But what if you could bring that same energy, clarity, and excitement straight into your living room? With Red Wolf LED TVs, sports fans no longer just watch the game — they live it. Bigger. Better. Bolder.  Our latest range of Red Wolf LED TVs delivers stunning picture quality, powered by advanced display technology and immersive sound. From the green of the stadium to the tiniest details of the ball in motion, every frame is sharper, brighter, and more lifelike than ever before. Perfect for Every Match Whether it’s cricket, football, or any live event, Red Wolf LED TVs ensure you never miss a moment. With Dolby Audio, HDR10, HDMI connectivity, and smart features, your viewing experience transforms into a personal stadium — right from the comfort of your couch. Why Choose Red Wolf LED TV? Cinematic Experience: Stadium-like visuals with vibrant colors. Immersive Sound: Dolby-powered audio makes you feel the roar of the crowd. Smart Connectivity: Access to apps, streaming, and more with ease. Every Occasion, Perfected: Movies, matches, or family nights — enjoy it all. The Game is On — Are You Ready? Grab your popcorn, settle in, and let Red Wolf LED TVs transport you into the heart of the action. Because with us, every game is more than entertainment — it’s an experience. 📞 Call us today: 9717660554 | 9988401333🌐 Visit us: www.redwolfinfotech.com"
+            full: "4K Ultra HD Display – Clarity Beyond Imagination With cutting-edge 4K Ultra HD, every frame bursts to life with stunning clarity, vibrant colors, and breathtaking detail. Whether you’re watching your favorite movie, catching up on a live match, or streaming the latest series, you’ll see visuals as crisp as reality. Ultra Widescreen – Bigger, Better, Bolder Step into the world of immersive viewing with an ultra widescreen display that makes every moment larger than life. Perfect for family gatherings, movie nights, or gaming marathons, it ensures you don’t miss a single detail. High-Quality Speakers – Feel the Sound Your entertainment is incomplete without powerful sound. The Red Wolf LED TV comes equipped with high-quality speakers, delivering crystal-clear audio and deep bass that elevate your experience. From dialogues to background scores, every sound is sharp and immersive. Seamless Connectivity – Entertainment Without Limits Smart, simple, and seamless – our LED TV supports smooth connectivity options to let you stream, browse, or connect effortlessly. Be it movies, music, or gaming, switching between platforms is easier than ever. At Red Wolf, we believe in blending technology with lifestyle. The Red Wolf LED TV isn’t just a screen – it’s a gateway to endless entertainment, smarter living, and memorable moments with your loved ones. ✨ Red Wolf LED TV – See the Future of Entertainment, Today."
         }
     ];
 
@@ -116,3 +118,9 @@ const Blog = () => {
 };
 
 export default Blog;
+
+
+
+
+
+
